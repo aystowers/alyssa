@@ -1,0 +1,238 @@
+<html>
+    <head>
+        <title>Alyssa Stowers</title>
+        <meta name="title" content="Alyssa Stowers">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 minimal-ui">
+        <link rel="stylesheet" href="style_long_page.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="icon" href="images/ofcourse_logo.png">
+
+    <meta name="description" content="Design Practice of Alyssa Stowers">
+    <meta name="keywords" content="Graphic Design, Design, Design Portfolio, Digital Design, Print Design, Animation, Portfolio Site, Alyssa Stowers, ">
+
+
+    </head>
+
+<body>
+
+
+<div class="marquee" style="opacity: 2;">
+    <img src="img/spin.gif">
+</div>
+
+<section class="margin">
+
+
+
+    <div id="div1">     
+      <div class="title">
+            <p><a href="index.html">Select Work —</a><br>Bon Appétit Projects</p>
+      </div>
+
+
+        <div class="contact">
+            <p><a href="mailto:aystowers@gmail.com"><div class="email"><span>Contact</span></div></a></p>
+        </div>
+
+
+    </div>
+
+
+<div id="div2">
+
+
+
+      <div class="post">
+            <video playsinline autoplay loop muted poster="img/ba_simple_issue.jpg" alt="Bon Appétit Simple Issue campaign." >
+            <source type="video/mp4" src="img/ba_simple_issue.mp4">
+            </video>
+      </div>
+
+
+      <div class="post">
+            <video playsinline autoplay loop muted poster="img/ba_simple_issue_videos.jpg" alt="Bon Appétit Simple Issue Videos." >
+            <source type="video/mp4" src="img/ba_simple_issue_videos.mp4">
+            </video>
+      </div>
+
+
+      <div class="post">
+            <video playsinline autoplay loop muted poster="img/ba_july_4th.jpg" alt="Bon Appétit 4th of July." >
+            <source type="video/mp4" src="img/ba_july_4th.mp4">
+            </video>
+      </div>
+
+        <div class="post">
+            <video playsinline autoplay loop muted poster="img/ba_thanksgiving_issue.jpg" alt="Bon Appétit THanksgiving Issue." >
+            <source type="video/mp4" src="img/ba_thanksgiving_issue.mp4">
+            </video>
+      </div>
+ 
+          <div class="post">
+            <video playsinline autoplay loop muted poster="img/ba_misc.jpg" alt="Bon Appétit Misc." >
+            <source type="video/mp4" src="img/ba_misc.mp4">
+            </video>
+      </div>
+
+    <div class="post">
+   
+        <br>
+        1. Campaign for the inaugural 'Simple Issue' launch. Included designing the visual identity, then executing it across all marketing channels.<br> 
+        2. Evergreen recipe video ads. Edits were initially shot and used alongise the Simple Issue content.<br>
+        3. Identity and asset design for the brand's 4th of July Sale.<br>
+        4. The Thanksgiving Issue launch.<br>
+        5. Misc — Bon Appétit homepage ad + holiday Instagram Stories. 
+        
+    </div>
+
+</div>
+
+
+</section>
+
+
+    <div id="div5">
+            <div class="descriptiontext_mobile">
+                Alyssa Stowers is a graphic designer and art director based in New York. <br><br>She is currently open to new work and collaboration — please get in touch to learn more or simply to say hello at aystowers@gmail.com.
+            </div>
+            
+            <div class="descriptiontext_contact_mobile">
+                <a href="mailto:mailto:aystowers@gmail.com">Contact</a><br>
+                <a href="https://www.instagram.com/alyssa_stowers/" target="_blank">Follow</a>
+            </div>  
+
+    </div>
+
+
+
+<footer class="fixed-footer">
+        <div id="div3">
+            <div class="descriptiontext_contact">
+          
+                <a href="https://www.instagram.com/alyssa_stowers/?hl=en" target="_blank"><div class="instagram"><span>Info</span></div></a>
+                
+            </div>  
+        </div> 
+
+        <div id="div4">
+            <div class="descriptiontext">
+                Alyssa Stowers is a graphic designer and art director based in New York. <br><br>She is currently open to new work and collaboration — please get in touch to learn more or simply to say hello at aystowers@gmail.com.
+            </div>
+        </div>
+</footer>
+
+
+
+
+
+    <script>
+            $(document).ready(function(){
+                
+                (function ($, window, undefined) {
+                    $.fn.marqueeify = function (options) {
+                        var settings = $.extend({
+                            horizontal: true,
+                            vertical: true,
+                            speed: 100, // In pixels per second
+                            container: $(this).parent(),
+                            bumpEdge: function () {}
+                        }, options);
+
+                        return this.each(function () {
+                            var containerWidth, containerHeight, elWidth, elHeight, move, getSizes,
+                                $el = $(this);
+
+                            getSizes = function () {
+                                containerWidth = settings.container.outerWidth();
+                                containerHeight = settings.container.outerHeight();
+                                elWidth = $el.outerWidth();
+                                elHeight = $el.outerHeight();
+                            };
+
+                            move = {
+                                right: function () {
+                                    $el.animate({left: (containerWidth - elWidth)}, {duration: ((containerWidth/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+                                        settings.bumpEdge();
+                                        move.left();
+                                    }});
+                                },
+                                left: function () {
+                                    $el.animate({left: 0}, {duration: ((containerWidth/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+                                        settings.bumpEdge();
+                                        move.right();
+                                    }});
+                                },
+                                down: function () {
+                                    $el.animate({top: (containerHeight - elHeight)}, {duration: ((containerHeight/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+                                        settings.bumpEdge();
+                                        move.up();
+                                    }});
+                                },
+                                up: function () {
+                                    $el.animate({top: 0}, {duration: ((containerHeight/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+                                        settings.bumpEdge();
+                                        move.down();
+                                    }});
+                                }
+                            };
+
+                            getSizes();
+
+                            if (settings.horizontal) {
+                                move.right();
+                            }
+                            if (settings.vertical) {
+                                move.down();
+                            }
+
+                      // Make that shit responsive!
+                      $(window).resize( function() {
+                        getSizes();
+                      });
+                        });
+                    };
+                })(jQuery, window);
+
+                $(document).ready( function() {
+
+                  var x = document.getElementById("myAudio"); 
+
+                function playAudio() { 
+                  x.pause()
+                  x.currentTime = 0;
+                  x.play(); 
+                } 
+
+                function pauseAudio() { 
+                    x.pause(); 
+                } 
+
+                    $('.marquee').marqueeify({
+                        speed: 80,
+                        bumpEdge: function () {
+                            var newColor = "hsl(" + Math.floor(Math.random()*360) + ", 100%, 50%)";
+                            $('.marquee .logo').css('fill', newColor);
+
+
+                    // playAudio();
+                        }
+                    });
+                });
+                /* DOCUMENT READY */
+            });
+            
+            
+            
+    </script>
+
+    
+    <script src="js/cursor.js"></script>
+    <div class="theBall-outer"><div class="theBall"></div></div>
+
+
+    
+
+</body>
+  
+</html>

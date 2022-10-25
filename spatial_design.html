@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <title>Alyssa Stowers</title>
+        <meta name="title" content="Alyssa Stowers">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 minimal-ui">
+        <link rel="stylesheet" href="style_long_page.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="icon" href="images/ofcourse_logo.png">
+
+    <meta name="description" content="Design Practice of Alyssa Stowers">
+    <meta name="keywords" content="Graphic Design, Design, Design Portfolio, Digital Design, Print Design, Animation, Portfolio Site, Alyssa Stowers, ">
+
+
+    </head>
+
+<body>
+
+
+<div class="marquee" style="opacity: 2;">
+    <img src="img/spin.gif">
+</div>
+
+<section class="margin">
+
+
+
+    <div id="div1">     
+      <div class="title">
+            <p><a href="index.html">Select Work —</a><br>Spatial Design</p>
+      </div>
+
+
+        <div class="contact">
+            <p><a href="mailto:aystowers@gmail.com"><div class="email"><span>Contact</span></div></a></p>
+        </div>
+
+
+    </div>
+
+
+<div id="div2">
+  <h2></h2>
+
+
+
+      <div class="post">
+          <img src="img/spatial_op_pop_up.jpg">
+      </div>
+
+        <div class="post">
+            <video playsinline autoplay loop muted poster="img/spatial_op_pop_up_video.jpg" alt="Website design for studio." >
+            <source type="video/mp4" src="img/spatial_op_pop_up_video.mp4">
+            </video>
+      </div>
+
+
+      <div class="post">
+          <img src="img/spatial_op_pop_up_before.jpg">
+      </div>
+
+
+<div class="post">
+    <span class="available">
+    Our Place Nordstrom pop up. This project was the first ever consumer-facing experience for the brand, and I was given full creative control to develop the look and feel across all touchpoints. I designed the wall graphics, sourced printers and oversaw its installation, handled the buying/fufillment for all of the props and product, then carried out the stying and merchandising of the physical space during the evening install. <br><br>
+    The pop up spanned two floors of their Flagship New York location, taking over multiple spaces in the store. It was intially supposed to be live for around two months, but was extended through the end of the year at no additional cost to the brand—totaling over seven months of retail exposure.<br><br><br>
+    </span>
+</div>
+
+      <div class="post">
+          <img src="img/spatial_airstream.jpg">
+      </div>
+
+ <div class="post">
+   
+    <span class="available">
+    Renovation of a 1964 Airstream Safari. The interior was completely gutted, then re-built from scratch. It features custom cabinetry and finishes throughout. Photos shown above are from before, during and after.
+
+    </span>
+
+
+</div>
+
+
+
+</section>
+
+
+    <div id="div5">
+            <div class="descriptiontext_mobile">
+                Alyssa Stowers is a graphic designer and art director based in New York. <br><br>She is currently open to new work and collaboration — please get in touch to learn more or simply to say hello at aystowers@gmail.com.
+            </div>
+            
+            <div class="descriptiontext_contact_mobile">
+                <a href="mailto:mailto:aystowers@gmail.com">Contact</a><br>
+                <a href="https://www.instagram.com/alyssa_stowers/" target="_blank">Follow</a>
+            </div>  
+
+    </div>
+
+
+
+<footer class="fixed-footer">
+        <div id="div3">
+            <div class="descriptiontext_contact">
+          
+                <a href="https://www.instagram.com/alyssa_stowers/?hl=en" target="_blank"><div class="instagram"><span>Info</span></div></a>
+                
+            </div>  
+        </div> 
+
+        <div id="div4">
+            <div class="descriptiontext">
+                Alyssa Stowers is a graphic designer and art director based in New York. <br><br>She is currently open to new work and collaboration — please get in touch to learn more or simply to say hello at aystowers@gmail.com.
+            </div>
+        </div>
+</footer>
+
+
+
+
+
+    <script>
+            $(document).ready(function(){
+                
+                (function ($, window, undefined) {
+                    $.fn.marqueeify = function (options) {
+                        var settings = $.extend({
+                            horizontal: true,
+                            vertical: true,
+                            speed: 100, // In pixels per second
+                            container: $(this).parent(),
+                            bumpEdge: function () {}
+                        }, options);
+
+                        return this.each(function () {
+                            var containerWidth, containerHeight, elWidth, elHeight, move, getSizes,
+                                $el = $(this);
+
+                            getSizes = function () {
+                                containerWidth = settings.container.outerWidth();
+                                containerHeight = settings.container.outerHeight();
+                                elWidth = $el.outerWidth();
+                                elHeight = $el.outerHeight();
+                            };
+
+                            move = {
+                                right: function () {
+                                    $el.animate({left: (containerWidth - elWidth)}, {duration: ((containerWidth/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+                                        settings.bumpEdge();
+                                        move.left();
+                                    }});
+                                },
+                                left: function () {
+                                    $el.animate({left: 0}, {duration: ((containerWidth/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+                                        settings.bumpEdge();
+                                        move.right();
+                                    }});
+                                },
+                                down: function () {
+                                    $el.animate({top: (containerHeight - elHeight)}, {duration: ((containerHeight/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+                                        settings.bumpEdge();
+                                        move.up();
+                                    }});
+                                },
+                                up: function () {
+                                    $el.animate({top: 0}, {duration: ((containerHeight/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+                                        settings.bumpEdge();
+                                        move.down();
+                                    }});
+                                }
+                            };
+
+                            getSizes();
+
+                            if (settings.horizontal) {
+                                move.right();
+                            }
+                            if (settings.vertical) {
+                                move.down();
+                            }
+
+                      // Make that shit responsive!
+                      $(window).resize( function() {
+                        getSizes();
+                      });
+                        });
+                    };
+                })(jQuery, window);
+
+                $(document).ready( function() {
+
+                  var x = document.getElementById("myAudio"); 
+
+                function playAudio() { 
+                  x.pause()
+                  x.currentTime = 0;
+                  x.play(); 
+                } 
+
+                function pauseAudio() { 
+                    x.pause(); 
+                } 
+
+                    $('.marquee').marqueeify({
+                        speed: 80,
+                        bumpEdge: function () {
+                            var newColor = "hsl(" + Math.floor(Math.random()*360) + ", 100%, 50%)";
+                            $('.marquee .logo').css('fill', newColor);
+
+
+                    // playAudio();
+                        }
+                    });
+                });
+                /* DOCUMENT READY */
+            });
+            
+            
+            
+    </script>
+
+    
+    <script src="js/cursor.js"></script>
+    <div class="theBall-outer"><div class="theBall"></div></div>
+
+
+    
+
+</body>
+  
+</html>
