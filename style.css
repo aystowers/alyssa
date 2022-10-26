@@ -148,7 +148,7 @@ h2{
 section{
     position: relative;
     width:100%;
-    min-height: 156vh;
+    min-height: 160vw;
     z-index: 10;
     background: #fff;
 }
