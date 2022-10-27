@@ -382,7 +382,6 @@ h2{
 section{
     position: relative;
     width:100%;
-   
     z-index: 10;
     background: #fff;
 }
@@ -392,14 +391,6 @@ section{
   margin-bottom: 40;
 }
 
-
-
-section{
-    position: relative;
-    width:100%;
-    z-index: 10;
-    background: #fff;
-}
 
 
 
