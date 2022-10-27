@@ -82,8 +82,27 @@ a:visited {
 @media screen and (max-width:10000px) and (min-width: 1100px){
 
 
+h2{
+    font-size: 4.2vh; 
+    font-style: normal; 
+    font-weight:  300; 
+    line-height: 4.8vh;
+    padding-top: .4vh;
+    padding-right:4vw;
+    position:static;
 
+}
 
+#div2 { 
+    width: 50%; 
+    height: 100%; 
+    float: left;
+    background: white;
+    color:#fff;
+    overflow:scroll;
+    color:#393c44;
+
+}
 
 
 
@@ -104,37 +123,20 @@ a:visited {
     width:100%;
 }
 
-
-.post video{
-    width:100%;
-}
-
-
 .post{
-    font-size: 14px; 
+    font-size: 3vh; 
     font-style: normal; 
     font-variant: normal; 
     font-weight:300; 
-    line-height: 22px;
-    padding-left:0vw;
-    padding-right:2.8vw;
+    line-height: 4.8vh;
+    padding-left:1vw;
+    padding-right:1vw;
     padding-bottom: 2vw;
-    display: inline-block;
-
 
 }
 
 
 
-
-
-.available{
-    font-size: 14px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight:300; 
-    line-height: 20px;
-}
 
 
 
@@ -145,21 +147,15 @@ a:visited {
 section{
     position: relative;
     width:100%;
-    min-height: 100vw;
+    min-height: 156vh;
     z-index: 10;
     background: #fff;
-
-
-    
-
 }
 
 .margin{
+  min-height: 1000;
   margin-bottom: 220;
-
-
 }
-
 
 #div1 {
     font-size: 38; 
@@ -170,23 +166,7 @@ section{
     height: 100%; 
     float: left;
     color:#000;
-
-
 }
-
-
-#div2 { 
-    width: 50%; 
-    height: 100%; 
-    float: left;
-    background: white;
-    color:#fff;
-    color:#393c44;
-    padding-top: 100px;
-    
-
-}
-
 
 .title{
     line-height: 1.13;
@@ -213,8 +193,16 @@ section{
   border-bottom: 2px solid black;
 }
 
-
-
+#div2 { 
+    font-size: 38; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 300; 
+    width: 50%; 
+    height: 100%; 
+    float: left;
+    color:#000;
+}
 
 .services{
     line-height: 1.13;
@@ -270,12 +258,11 @@ footer{
     font-size: 16; 
     letter-spacing: -.5; 
     line-height: 1.3;
-    padding-left:0;
+    padding-left:40;
     padding-right:10vw;
     display:block;
     float: left;
 }
-
 
 #div3{
   width:50%;
@@ -309,99 +296,20 @@ footer{
 /* BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2   */
 
 
-
-
-/* BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3   */
-
-@media screen and (max-width:1099px) and (min-width: 600px){
-
-
-
-
-h2{
-    font-size: 4.2vh; 
-    font-style: normal; 
-    font-weight:  300; 
-    line-height: 4.8vh;
-    padding-top: .4vh;
-    padding-right:4vw;
-
-
-}
-
-
-
-
-
-.description{
-    font-size: 3vh; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight:300; 
-    line-height: 4.8vh;
-    padding-right:4vw;
-
-
-
-
-}
-
-.post img{
-    width:100%;
-}
-
-
-.post video{
-    width:100%;
-}
-
-
-.post{
-    font-size: 14px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight:300; 
-    line-height: 22px;
-    padding-left:10vw;
-    padding-right:10vw;
-    padding-bottom: 2vw;
-
-}
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width:1099px) and (min-width: 500px){
 
 
 section{
     position: relative;
     width:100%;
-   
     z-index: 10;
     background: #fff;
 }
 
 .margin{
-  min-height: 175vw;
-  margin-bottom: 40;
+  min-height: 760;
+
 }
-
-
-
-section{
-    position: relative;
-    width:100%;
-    z-index: 10;
-    background: #fff;
-}
-
-
 
 #div1 {
     font-size: 36; 
@@ -438,7 +346,6 @@ section{
     float: left;
     color:#000;
     display: block;
-    padding-top: 60px;
 }
 
 .services{
@@ -463,7 +370,7 @@ section{
 
 
 .descriptiontext_mobile{
-    font-size: 16; 
+    font-size: 20; 
     letter-spacing: -.5; 
     line-height: 1.3;
     padding-left:40;
@@ -516,104 +423,23 @@ footer{
 
 /* BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3   */
 
-@media screen and (max-width:599px) and (min-width: 100px){
+@media screen and (max-width:499px) and (min-width: 100px){
 
 
 .theBall{
   display: none;
 }
 
-
-
-
-
-h2{
-    font-size: 4.2vh; 
-    font-style: normal; 
-    font-weight:  300; 
-    line-height: 4.8vh;
-    padding-top: .4vh;
-    padding-right:4vw;
-
-
-}
-
-
-
-
-
-.description{
-    font-size: 3vh; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight:300; 
-    line-height: 4.8vh;
-    padding-right:4vw;
-
-
-
-
-}
-
-.post img{
-    width:100%;
-}
-
-.post video{
-    width:100%;
-}
-
-
-.post{
-    font-size: 14px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight:300; 
-    line-height: 22px;
-    padding-left:30px;
-    padding-right:30px;
-    padding-bottom: 2vw;
-
-}
-
-
-
-#div2 { 
-    font-size: 36; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    width: 100%; 
-    float: left;
-    color:#000;
-    display: block;
-    padding-top: 28vw;
-}
-
-
-
-
-
-
-
-
-
 section{
     position: relative;
     width:100%;
-   
     z-index: 10;
     background: #fff;
 }
 
 .margin{
-  min-height: 220vw;
-  margin-bottom: 40;
+  min-height: 960;
 }
-
-
-
-
 
 #div1 {
     font-size: 9vw; 
@@ -641,6 +467,17 @@ section{
     color:#fff;
 }
 
+#div2 { 
+    font-size: 9vw; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 300; 
+    width: 100%; 
+    float: left;
+    color:#000;
+    display: block;
+}
+
 .services{
     line-height: 1.13;
     padding-left:30px;
@@ -663,7 +500,7 @@ section{
 
 
 .descriptiontext_mobile{
-    font-size: 4vw; 
+    font-size: 6vw; 
     letter-spacing: -.5; 
     line-height: 1.3;
     padding-left:40;
