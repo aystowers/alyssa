@@ -296,7 +296,7 @@ footer{
 /* BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2   */
 
 
-@media screen and (max-width:899px) and (min-width: 500px){
+@media screen and (max-width:899px) and (min-width: 400px){
 
 
 section{
@@ -307,7 +307,7 @@ section{
 }
 
 .margin{
-  min-height: 760;
+  min-height: 800;
 
 }
 
@@ -438,7 +438,7 @@ section{
 }
 
 .margin{
-  min-height: 960;
+  min-height: 800;
 }
 
 #div1 {
@@ -548,6 +548,13 @@ footer{
 }
 
 }
+
+
+
+
+
+
+
 
 
 
