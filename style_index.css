@@ -438,7 +438,7 @@ section{
 }
 
 .margin{
-  min-height: 800;
+  min-height: 200vw;
 }
 
 #div1 {
@@ -500,7 +500,7 @@ section{
 
 
 .descriptiontext_mobile{
-    font-size: 6vw; 
+    font-size: 18; 
     letter-spacing: -.5; 
     line-height: 1.3;
     padding-left:40;
