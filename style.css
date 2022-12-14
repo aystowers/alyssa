@@ -94,7 +94,16 @@ h2{
 
 }
 
+#div2 { 
+    width: 50%; 
+    height: 100%; 
+    float: left;
+    background: white;
+    color:#fff;
+    overflow:scroll;
+    color:#393c44;
 
+}
 
 
 
@@ -139,7 +148,7 @@ h2{
 section{
     position: relative;
     width:100%;
-    min-height: 160vw;
+    min-height: 156vh;
     z-index: 10;
     background: #fff;
 }
@@ -230,8 +239,8 @@ footer{
 }
 
 .email:hover:before {
-    border-bottom: 1px solid black;
-    content:"aystowers@gmail.com";
+    border-bottom: none;
+    content:"Keep Scrolling";
     color:#000;
 }
 
@@ -241,8 +250,8 @@ footer{
 }
 
 .instagram:hover:before {
-    border-bottom: 1px solid black;
-    content:"@alyssa_stowers";
+    border-bottom: none;
+    content:"aystowers@gmail.com";
     color:#fff;
 }
 
@@ -304,7 +313,16 @@ h2{
 
 }
 
+#div2 { 
+    width: 50%; 
+    height: 100%; 
+    float: left;
+    background: white;
+    color:#fff;
+    overflow:scroll;
+    color:#393c44;
 
+}
 
 
 
@@ -344,7 +362,7 @@ h2{
 section{
     position: relative;
     width:100%;
-    min-height: 160vw;
+    min-height: 1000;
     z-index: 10;
     background: #fff;
 }
@@ -444,7 +462,7 @@ footer{
 
 .email:hover:before {
     border-bottom: 1px solid black;
-    content:"aystowers@gmail.com";
+    content:"Keep Scrolling";
     color:#000;
 }
 

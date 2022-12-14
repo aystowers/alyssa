@@ -250,8 +250,8 @@ footer{
 }
 
 .email:hover:before {
-    border-bottom: 1px solid black;
-    content:"aystowers@gmail.com";
+    border-bottom: none;
+    content:"Keep Scrolling";
     color:#000;
 }
 
@@ -261,8 +261,8 @@ footer{
 }
 
 .instagram:hover:before {
-    border-bottom: 1px solid black;
-    content:"@alyssa_stowers";
+    border-bottom: none;
+    content:"aystowers@gmail.com";
     color:#fff;
 }
 
