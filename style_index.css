@@ -77,19 +77,20 @@ a:visited {
 
 /* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
 
-@media screen and (min-width: 1599px){
 
+
+@media screen and (max-width:100000000px) and (min-width:1601px){
 
 
 
 #div2 { 
-    width: 50%;  
+    width: 50%; 
+    height: 100%; 
     float: left;
     background: white;
     color:#fff;
     overflow:scroll;
     color:#393c44;
-    
 }
 
 .description{
@@ -104,21 +105,23 @@ a:visited {
 section{
     position: relative;
     width:100%;
+    min-height: 156vh;
     z-index: 10;
     background: #fff;
 }
 
 .margin{
-  min-height: 1600;
+  min-height: 960;
   margin-bottom: 220;
 }
 
 #div1 {
-    font-size: 44; 
+    font-size: 38; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 300; 
-    width: 50%;  
+    width: 50%; 
+    height: 100%; 
     float: left;
     color:#000;
 }
@@ -148,6 +151,16 @@ section{
   border-bottom: 2px solid black;
 }
 
+#div2 { 
+    font-size: 38; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 300; 
+    width: 50%; 
+    height: 100%; 
+    float: left;
+    color:#000;
+}
 
 .services{
     line-height: 1.13;
@@ -183,7 +196,7 @@ footer{
 }
 
 .email:hover:before {
-    border-bottom: 1px solid black;
+    border-bottom: none;
     content:"Keep Scrolling";
     color:#000;
 }
@@ -668,19 +681,3 @@ footer{
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
