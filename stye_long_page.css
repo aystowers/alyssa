@@ -586,7 +586,7 @@ section{
 }
 
 .margin{
-  min-height: 1580;
+  min-height: 370vw;
   margin-bottom: 40;
 }
 
@@ -690,4 +690,3 @@ footer{
 }
 
 }
-
