@@ -79,7 +79,7 @@ a:visited {
 
 /* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
 
-@media screen and (max-width:10000px) and (min-width: 1100px){
+@media screen and (max-width:10000px) and (min-width: 900px){
 
 
 
@@ -205,7 +205,7 @@ section{
 
 .title{
     line-height: 1.13;
-    padding-left:40px;
+    padding-left:4vw;
     padding-right:7vh;
     padding-top: 100px;
     display:block;
@@ -217,7 +217,7 @@ section{
     font-variant: normal; 
     font-weight: 300; 
     line-height: 1.12;
-    padding-left:40px;
+    padding-left:4vw;
     padding-right:7vh;
     position: fixed;
     bottom: 6vh;
@@ -328,7 +328,7 @@ footer{
 
 /* BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3   */
 
-@media screen and (max-width:1099px) and (min-width: 500px){
+@media screen and (max-width:899px) and (min-width: 500px){
 
 
 
@@ -690,6 +690,3 @@ footer{
 }
 
 }
-
-
-

@@ -128,7 +128,7 @@ section{
 
 .title{
     line-height: 1.13;
-    padding-left:40px;
+    padding-left:4vw;
     padding-right:7vh;
     padding-top: 100px;
     display:block;
@@ -140,7 +140,7 @@ section{
     font-variant: normal; 
     font-weight: 300; 
     line-height: 1.12;
-    padding-left:40px;
+    padding-left:4vw;
     padding-right:7vh;
     position: fixed;
     bottom: 6vh;
@@ -303,7 +303,7 @@ section{
 
 .title{
     line-height: 1.13;
-    padding-left:40px;
+    padding-left:4vw;
     padding-right:7vh;
     padding-top: 100px;
     display:block;
@@ -315,7 +315,7 @@ section{
     font-variant: normal; 
     font-weight: 300; 
     line-height: 1.12;
-    padding-left:40px;
+    padding-left:4vw;
     padding-right:7vh;
     position: fixed;
     bottom: 6vh;
