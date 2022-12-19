@@ -160,7 +160,7 @@ a:visited {
 section{
     position: relative;
     width:100%;
-    min-height: 224vw;
+    min-height: 220vw;
     z-index: 10;
     background: #fff;
 
@@ -170,7 +170,7 @@ section{
 }
 
 .margin{
-  margin-bottom: 210;
+  margin-bottom: 220;
 
 
 }
