@@ -675,18 +675,11 @@ footer{
 
 
 .marquee {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    overflow: none;
-    margin: 0;
-    padding: 0;
+display:none;
 }
 
 .marquee img{
-  width: 200px !important;    
-
+display:none;  
 }
 
 }
