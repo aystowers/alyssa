@@ -493,11 +493,17 @@ footer{
 
 
 .marquee {
-  display:none; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    overflow: none;
+    margin: 0;
+    padding: 0;
 }
 
 .marquee img{
-  display:none;   
+  width: 34vh !important;    
 
 }
 
