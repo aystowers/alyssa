@@ -170,6 +170,7 @@ section{
     padding-left:40px;
     padding-top: 100px;
     display:block;
+    padding-right: 50px;
 }
 
 footer{
@@ -252,11 +253,12 @@ footer{
 }
     
 .available{
-    font-size: 14px; 
+    font-size: 18px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight:300; 
-    line-height: 20px;
+    line-height: 22px;
+    padding-right: 50px;
 }
 
 
@@ -355,6 +357,7 @@ section{
     padding-left:40px;
     padding-top: 100px;
     display:block;
+    padding-right: 50px;
 }
 
 footer{
@@ -437,11 +440,12 @@ footer{
 }
 
 .available{
-    font-size: 14px; 
+    font-size: 18px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight:300; 
-    line-height: 20px;
+    line-height: 22px;
+    padding-right: 50px;
 }
 
 
@@ -539,6 +543,7 @@ section{
     padding-left:40px;
     padding-top: 100px;
     display:block;
+    padding-right: 50px;
 }
 
 footer{
@@ -621,11 +626,12 @@ footer{
 }
     
 .available{
-    font-size: 14px; 
+    font-size: 18px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight:300; 
-    line-height: 20px;
+    line-height: 22px;
+    padding-right: 50px;
 }
 
 }
@@ -755,6 +761,15 @@ footer{
 .marquee img{
   width: 34vh !important;    
 
+}
+
+.available{
+    font-size: 16px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight:300; 
+    line-height: 20px;
+    padding-right: 50px;
 }
 
 }
@@ -891,6 +906,7 @@ footer{
     font-variant: normal; 
     font-weight:300; 
     line-height: 20px;
+    padding-right:7vh;
 }
 
 
