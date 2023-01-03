@@ -265,6 +265,10 @@ footer{
     display: none;
 }
 
+.available_mobile{
+    display: none;
+}
+
 }
 
 
@@ -453,6 +457,10 @@ footer{
 
 
 .mobile_services{
+    display: none;
+}
+
+.available_mobile{
     display: none;
 }
 
@@ -645,6 +653,10 @@ footer{
     display: none;
 }
 
+.available_mobile{
+    display: none;
+}
+
 }
 
 
@@ -783,6 +795,10 @@ footer{
     padding-right:7vh;
 }
 
+.available_mobile{
+    display: none;
+}
+
 }
 
 /* BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3   */
@@ -913,6 +929,15 @@ footer{
     
 .available{
     display:none;
+}
+
+.available_mobile{
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight:300; 
+    line-height: 20px;
+    padding-right:7vh;
 }
 
 
