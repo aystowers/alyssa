@@ -250,6 +250,15 @@ footer{
   width: 34vh !important;    
 
 }
+    
+.available{
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight:300; 
+    line-height: 20px;
+}
+
 
 }
 
@@ -427,6 +436,15 @@ footer{
 
 }
 
+.available{
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight:300; 
+    line-height: 20px;
+}
+
+
 }
 
 
@@ -600,6 +618,14 @@ footer{
 .marquee img{
   width: 34vh !important;    
 
+}
+    
+.available{
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight:300; 
+    line-height: 20px;
 }
 
 }
@@ -858,5 +884,14 @@ footer{
   width: 200px !important;    
 
 }
+    
+.available{
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight:300; 
+    line-height: 20px;
+}
+
 
 }
