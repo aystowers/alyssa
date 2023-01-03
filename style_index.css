@@ -640,7 +640,7 @@ footer{
 /* BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2   */
 
 
-@media screen and (max-width:899px) and (min-width: 400px){
+@media screen and (max-width:899px) and (min-width: 500px){
 
 
 section{
@@ -901,12 +901,7 @@ footer{
 }
     
 .available{
-    font-size: 14px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight:300; 
-    line-height: 20px;
-    padding-right:7vh;
+    display:none;
 }
 
 
