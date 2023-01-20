@@ -580,6 +580,7 @@ footer{
     display:block;
     padding-left:40px;
     float: left;
+    padding-left:4vw;
 }
 
 .email:hover span {
