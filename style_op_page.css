@@ -106,7 +106,7 @@ a:visited {
     line-height: 22px;
     padding-left:0vw;
     padding-right:4vw;
-    padding-bottom: 1vw;
+    padding-bottom: 2vw;
     display: inline-block;
 }
 
@@ -118,13 +118,8 @@ a:visited {
     line-height: 24px;
     padding-left:0vw;
     padding-right:2.8vw;
-
+    padding-bottom: 2vw;
     display: inline-block;
-}
-    
-span.subcopy{
-    padding-top: 4px;
-    float:left;
 }
 
 .available{
@@ -307,7 +302,7 @@ footer{
     line-height: 22px;
     padding-left:0vw;
     padding-right:4vw;
-    padding-bottom: 1vw;
+    padding-bottom: 2vw;
     display: inline-block;
 }
 
@@ -319,13 +314,8 @@ footer{
     line-height: 24px;
     padding-left:0vw;
     padding-right:2.8vw;
-
+    padding-bottom: 2vw;
     display: inline-block;
-}
-    
-span.subcopy{
-    padding-top: 4px;
-    float:left;
 }
 
 .available{
@@ -514,11 +504,6 @@ footer{
     padding-right:10vw;
     padding-bottom: 2vw;
 }
-    
-span.subcopy{
-    padding-top: 4px;
-    float:left;
-}
 
 .margin{
   min-height: 390vw;
@@ -649,11 +634,6 @@ footer{
     font-weight:300; 
     line-height: 4.8vh;
     padding-right:4vw;
-}
-    
-span.subcopy{
-    padding-top: 4px;
-    float:left;
 }
 
 .post img{
