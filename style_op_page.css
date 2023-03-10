@@ -329,7 +329,7 @@ footer{
 section{
     position: relative;
     width:100%;
-    min-height: 294vw;
+    min-height: 290vw;
     z-index: 10;
     background: #fff;
 }
@@ -675,7 +675,7 @@ section{
 }
 
 .margin{
-  min-height: 610vw;
+  min-height: 620vw;
   margin-bottom: 40;
 }
 
