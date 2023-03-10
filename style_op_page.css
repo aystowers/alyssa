@@ -133,7 +133,7 @@ a:visited {
 section{
     position: relative;
     width:100%;
-    min-height: 268vw;
+    min-height: 280vw;
     z-index: 10;
     background: #fff;
 }
@@ -329,7 +329,7 @@ footer{
 section{
     position: relative;
     width:100%;
-    min-height: 280vw;
+    min-height: 294vw;
     z-index: 10;
     background: #fff;
 }
@@ -506,7 +506,7 @@ footer{
 }
 
 .margin{
-  min-height: 470vw;
+  min-height: 480vw;
   margin-bottom: 40;
 }
 
@@ -675,7 +675,7 @@ section{
 }
 
 .margin{
-  min-height: 580vw;
+  min-height: 590vw;
   margin-bottom: 40;
 }
 
