@@ -4,7 +4,7 @@
         <meta name="title" content="Alyssa Stowers">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0 minimal-ui">
-        <link rel="stylesheet" href="style_index.css?new3"/>
+        <link rel="stylesheet" href="style.css?new3"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link rel="icon" href="img/spin.png">
 
@@ -16,26 +16,37 @@
 
 <body>
 
-
-<div class="marquee" style="opacity: 2;">
-    <img src="img/spin.gif">
-</div>
-
-<section class="margin">
-
-    <div id="div1">     
-      <div class="title">
-            <p><a href="index.html">Selected Work —</a><br>Audio</p>
-      </div>
-
-        <div class="contact">
-            <p><a href="mailto:aystowers@gmail.com"><div class="email"><span>Info</span></div></a></p>
-        </div>
+    <div class="nav">
+  
+        <p>Alyssa Stowers is a Graphic Designer and Art Director based in New York</p><br>
+  
     </div>
 
 
-    <div id="div2">
-          <div class="services">
+    <div class="nav-mobile">
+  
+        <p>Alyssa Stowers is a Graphic Designer and Art Director</p><br>
+  
+    </div>
+
+
+
+    <div id="div1">     
+      <div class="title">
+            <p><a href="index.html">Selected Work —</a><br><span>Our Place</span></p>
+      </div>
+
+        <div class="contact">
+            <p><div class="email"><span>Info</span></div></a></p>
+        </div>
+
+
+    </div>
+
+
+<div id="div2">
+     <div class="services">
+
 
                 <div class="mobile_services"><br></div>
                 <a href="https://coloringlessons.com/mix" target="_blank"><span>1. Coloring Lessons Mix Series 045: Alyssa Stowers</span></a><br>
@@ -47,161 +58,16 @@
             
                 <br>
 
-                <span class="available">
-                    As an occasional DJ, Alyssa takes her time between sets to carefully collect and select music to fit each setting. Her style can best be described as free-form and it's not uncommon for her to mix in a different genre with every other track. <br><br>Several previously recorded mixes are listed above. <a href="https://www.instagram.com/alyssa_stowers/">Follow <u>here</u></a> to learn more about upcoming parties and sets.<br></span>
+              <div class="description">
+                    As an occasional DJ, Alyssa takes her time between sets to carefully collect and select music to fit each setting. Her style can best be described as free-form and it's not uncommon for her to mix in a different genre with every other track. <br><br>Several previously recorded mixes are listed above. <a href="https://www.instagram.com/alyssa_stowers/">Follow <u>here</u></a> to learn more about upcoming parties and sets.<br></div>
 
-                <span class="available_mobile">
-                    Several previously recorded mixes are listed above. <a href="https://www.instagram.com/alyssa_stowers/">Follow <u>here</u></a> to learn more about upcoming parties and sets.</span><br>
-
-           
-
+       
                 
             </div>  
 
     </div>
 
-
-</section>
-
-    <div id="div5">
-            <div class="descriptiontext_mobile">
-                Alyssa Stowers is a Graphic Designer and Art Director based in New York.<br><br>She is currently open to new work and collaboration — please get in touch to learn more or simply say hello at aystowers@gmail.com.
-            </div>
-            
-            <div class="descriptiontext_contact_mobile">
-                <a href="mailto:mailto:aystowers@gmail.com">Contact</a><br>
-                <a href="https://www.instagram.com/alyssa_stowers/" target="_blank">Instagram</a>
-            </div>  
-
-    </div>
-
-
-
-<footer class="fixed-footer">
-        <div id="div3">
-            <div class="descriptiontext_contact">
-          
-                <a href="mailto:aystowers@gmail.com"><div class="instagram"><span>Contact</span></div></a>
-                
-            </div>  
-        </div> 
-
-        <div id="div4">
-            <div class="descriptiontext">
-                Alyssa Stowers is a Graphic Designer and Art Director based in New York.<br><br>She is currently open to new work and collaboration — please get in touch to learn more or simply say hello at aystowers@gmail.com.
-            </div>
-        </div>
-</footer>
-
-
-
-
-    <script>
-            $(document).ready(function(){
-                
-                (function ($, window, undefined) {
-                    $.fn.marqueeify = function (options) {
-                        var settings = $.extend({
-                            horizontal: true,
-                            vertical: true,
-                            speed: 100, // In pixels per second
-                            container: $(this).parent(),
-                            bumpEdge: function () {}
-                        }, options);
-
-                        return this.each(function () {
-                            var containerWidth, containerHeight, elWidth, elHeight, move, getSizes,
-                                $el = $(this);
-
-                            getSizes = function () {
-                                containerWidth = settings.container.outerWidth();
-                                containerHeight = settings.container.outerHeight();
-                                elWidth = $el.outerWidth();
-                                elHeight = $el.outerHeight();
-                            };
-
-                            move = {
-                                right: function () {
-                                    $el.animate({left: (containerWidth - elWidth)}, {duration: ((containerWidth/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
-                                        settings.bumpEdge();
-                                        move.left();
-                                    }});
-                                },
-                                left: function () {
-                                    $el.animate({left: 0}, {duration: ((containerWidth/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
-                                        settings.bumpEdge();
-                                        move.right();
-                                    }});
-                                },
-                                down: function () {
-                                    $el.animate({top: (containerHeight - elHeight)}, {duration: ((containerHeight/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
-                                        settings.bumpEdge();
-                                        move.up();
-                                    }});
-                                },
-                                up: function () {
-                                    $el.animate({top: 0}, {duration: ((containerHeight/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
-                                        settings.bumpEdge();
-                                        move.down();
-                                    }});
-                                }
-                            };
-
-                            getSizes();
-
-                            if (settings.horizontal) {
-                                move.right();
-                            }
-                            if (settings.vertical) {
-                                move.down();
-                            }
-
-                      // Make that shit responsive!
-                      $(window).resize( function() {
-                        getSizes();
-                      });
-                        });
-                    };
-                })(jQuery, window);
-
-                $(document).ready( function() {
-
-                  var x = document.getElementById("myAudio"); 
-
-                function playAudio() { 
-                  x.pause()
-                  x.currentTime = 0;
-                  x.play(); 
-                } 
-
-                function pauseAudio() { 
-                    x.pause(); 
-                } 
-
-                    $('.marquee').marqueeify({
-                        speed: 80,
-                        bumpEdge: function () {
-                            var newColor = "hsl(" + Math.floor(Math.random()*360) + ", 100%, 50%)";
-                            $('.marquee .logo').css('fill', newColor);
-
-
-                    // playAudio();
-                        }
-                    });
-                });
-                /* DOCUMENT READY */
-            });
-            
-            
-            
-    </script>
-
-    
-    <script src="js/cursor.js"></script>
-    <div class="theBall-outer"><div class="theBall"></div></div>
-
-
-    
+  
 
 </body>
   
