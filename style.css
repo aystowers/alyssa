@@ -1,61 +1,21 @@
 *{
-    padding: 0;
-    margin: 0;
-    cursor: none;
-    box-sizing: border-box;
+
+    margin: 0 auto;
+
+    
 }
 
-body{
-    margin: 0;
-    padding: 0;
+body, html{
+    
     font-family: sans-serif;
     font-family: "Helvetica";
     font-weight:300;
-    line-height: 22px; 
-    background: #000;
+    background: #fffff9;
+
 }
 
 
-/* CURSOR PROPERTIES CURSOR PROPERTIES CURSOR PROPERTIES CURSOR PROPERTIES CURSOR PROPERTIES CURSOR PROPERTIES  */
 
-.theBall, .theBall-outer {
-  mix-blend-mode: exclusion;
-  width: 22px;
-  height: 22px;
-}
-
-.theBall-outer {
-  position: fixed;
-  top: -20px;
-  left: -20px;
-  z-index: 5000;
-  pointer-events: none!important;
-}
-
-.theBall {
-  position: absolute;
-  background-color: #fff;
-  border-radius: 50%;
-  -webkit-transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
-  -moz-transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
-  -ms-transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
-  -o-transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
-  transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
-  transform-origin: center center;
-}
-
-.zooming.theBall {
-  -webkit-transform: scale(1.8);
-  -moz-transform: scale(1.8);
-  -ms-transform: scale(1.8);
-  -o-transform: scale(1.8);
-  transform: scale(1.8);
-}
-
-.dark_page .theBall,
-.coloring .theBall {
-  background-color: #FF483B;
-}
 
 
 /* TOP ANIMATION TOP ANIMATION TOP ANIMATION TOP ANIMATION TOP ANIMATION TOP ANIMATION TOP ANIMATION */
@@ -77,104 +37,65 @@ a:visited {
 
 
 
+
 /* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
 
-@media screen and (max-width:10000px) and (min-width: 1000px){
+
+
+@media screen and (max-width:100000000px) and (min-width:1851px){
 
 
 
-h2{
-    font-size: 4.2vh; 
-    font-style: normal; 
-    font-weight:  300; 
-    line-height: 4.8vh;
-    padding-top: .4vh;
-    padding-right:4vw;
-    position:static;
 
-}
 
-#div2 { 
-    width: 50%; 
-    height: 100%; 
+.nav {
     float: left;
-    background: white;
-    color:#fff;
-    overflow:scroll;
-    color:#393c44;
-
-}
-
-
-
-.description{
-    font-size: 3vh; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight:300; 
-    line-height: 4.8vh;
-    padding-right:4vw;
-
-
-
-
-}
-
-.post img{
+    font-size: 14; 
+    font-weight: 300; 
+    text-align: left;
+    padding-left:4vw;
+    padding-top: 18px;
+    color:white;
+    mix-blend-mode: exclusion;
+    position: fixed;
+    text-transform: uppercase;
     width:100%;
+    border-bottom: solid 1px;
 }
 
-.post{
-    font-size: 3vh; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight:300; 
-    line-height: 4.8vh;
-    padding-left:1vw;
-    padding-right:1vw;
-    padding-bottom: 2vw;
-
+.nav-mobile{
+    display: none;
 }
 
-
-
-
-
-
-
-
-
-
-section{
-    position: relative;
-    width:100%;
-    min-height: 156vh;
-    z-index: 10;
-    background: #fff;
-}
-
-.margin{
-  min-height: 800;
-  margin-bottom: 220;
-}
 
 #div1 {
     font-size: 38; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 300; 
-    width: 50%; 
-    height: 100%; 
+    float: left;
+}
+
+#div2 { 
+    font-size: 38; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 300; 
     float: left;
     color:#000;
+    padding-top: 120px;
+    margin-left: 50%;
+
 }
+
+
 
 .title{
     line-height: 1.13;
-    padding-left:40px;
+    padding-left:4vw;
     padding-right:7vh;
-    padding-top: 100px;
-    display:block;
+    padding-top: 120px;
+  
     position: fixed;
 }
 
@@ -183,55 +104,20 @@ section{
     font-variant: normal; 
     font-weight: 300; 
     line-height: 1.12;
-    padding-left:40px;
+    padding-left:4vw;
     padding-right:7vh;
     position: fixed;
     bottom: 6vh;
     margin: 0 auto;
 }
 
-.contact a:hover {
-  border-bottom: 2px solid black;
-}
 
-#div2 { 
-    font-size: 38; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    width: 50%; 
-    height: 100%; 
-    float: left;
-    color:#000;
-}
 
 .services{
     line-height: 1.13;
-    padding-left:40px;
-    padding-top: 100px;
-    display:block;
+    padding-right:6vw;
 }
 
-footer{
-    width:100%;
-    height:220;
-    background:#000;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    bottom:0;
-    z-index: 1;
-    color:#fff;
-}
-
-.descriptiontext_contact{
-    font-size: 38; 
-    letter-spacing: -.5; 
-    line-height: 1.25;
-    display:block;
-    padding-left:40px;
-    float: left;
-}
 
 .email:hover span {
     display:none;
@@ -240,143 +126,78 @@ footer{
 
 .email:hover:before {
     border-bottom: none;
-    content:"Keep Scrolling";
+    content:"aystowers@gmail.com";
     color:#000;
 }
 
-.instagram:hover span {
-    display:none;
-    color:#fff;
-}
-
-.instagram:hover:before {
-    border-bottom: none;
-    content:"aystowers@gmail.com";
-    color:#fff;
-}
-
-.descriptiontext{
-    font-size: 16; 
-    letter-spacing: -.5; 
-    line-height: 1.3;
-    padding-left:40;
-    padding-right:10vw;
-    display:block;
-    float: left;
-}
-
-#div3{
-  width:50%;
-}
-#div4{
-  width:50%;
-}
-
-#div5{
-  display: none;
-}
-
-.marquee {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    overflow: none;
-    margin: 0;
-    padding: 0;
-}
-
-.marquee img{
-  width: 34vh !important;    
-
-}
-
-}
-
-
-/* BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2   */
-
-@media screen and (max-width:999px) and (min-width: 800px){
 
 
 
 
-
-h2{
-    font-size: 4.2vh; 
-    font-style: normal; 
-    font-weight:  300; 
-    line-height: 4.8vh;
-    padding-top: .4vh;
-    padding-right:4vw;
-    position:static;
-
-}
-
-#div2 { 
-    width: 50%; 
-    height: 100%; 
-    float: left;
-    background: white;
-    color:#fff;
-    overflow:scroll;
-    color:#393c44;
-
-}
-
-
-
-.description{
-    font-size: 3vh; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight:300; 
-    line-height: 4.8vh;
-    padding-right:4vw;
-
-
-
-
-}
 
 .post img{
     width:100%;
 }
 
+.post video{
+    width:100%;
+}
+
 .post{
-    font-size: 3vh; 
+    font-size: 14px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight:300; 
-    line-height: 4.8vh;
-    padding-left:1vw;
-    padding-right:1vw;
-    padding-bottom: 2vw;
+    line-height: 22px;
+    padding-left:0vw;
+    padding-right:4vw;
+    padding-bottom: 1.2vw;
+    display: inline-block;
+}
+
+.description{
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight:300; 
+    padding-right:4vw;
+    padding-top: 12px;
+    text-transform: uppercase;
+}
+
+.description span{
+    display: none;
+}
+
 
 }
 
 
+/* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
 
 
 
-section{
-    position: relative;
+@media screen and (max-width:1850px) and (min-width:1400px){
+
+
+
+.nav {
+    float: left;
+    font-size: 14; 
+    font-weight: 300; 
+    text-align: left;
+    padding-left:4vw;
+    padding-top: 18px;
+    color:white;
+    mix-blend-mode: exclusion;
+    position: fixed;
+    text-transform: uppercase;
     width:100%;
-    min-height: 1000;
-    z-index: 10;
-    background: #fff;
+    border-bottom: solid 1px;
 }
 
-img{ 
-  padding-bottom: 4px;
-  width:100px;
-  z-index: 100;
-  position:relative;
-}
-
-.margin{
-  min-height: 1000;
-  margin-bottom: 220;
+.nav-mobile{
+    display: none;
 }
 
 #div1 {
@@ -384,18 +205,28 @@ img{
     font-style: normal; 
     font-variant: normal; 
     font-weight: 300; 
-    width: 50%; 
-    height: 100%; 
+    float: left;
+}
+
+#div2 { 
+    font-size: 38; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 300; 
     float: left;
     color:#000;
+    padding-top: 120px;
+    margin-left: 50%;
+
 }
+
 
 .title{
     line-height: 1.13;
-    padding-left:40px;
+    padding-left:4vw;
     padding-right:7vh;
-    padding-top: 100px;
-    display:block;
+    padding-top: 120px;
+  
     position: fixed;
 }
 
@@ -404,56 +235,19 @@ img{
     font-variant: normal; 
     font-weight: 300; 
     line-height: 1.12;
-    padding-left:40px;
+    padding-left:4vw;
     padding-right:7vh;
     position: fixed;
-    bottom: 4.7vh;
+    bottom: 6vh;
     margin: 0 auto;
 }
 
-.contact a:hover {
-  border-bottom: 2px solid black;
-}
-
-#div2 { 
-    font-size: 38; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    width: 50%; 
-    height: 100%; 
-    float: left;
-    color:#000;
-}
 
 .services{
     line-height: 1.13;
-    padding-left:40px;
-    padding-top: 100px;
-    display:block;
+    padding-right:4vw;
 }
 
-footer{
-    width:100%;
-    height:220;
-    background:#000;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    bottom:0;
-    z-index: 1;
-    color:#fff;
-}
-
-.descriptiontext_contact{
-    font-size: 38; 
-    letter-spacing: -.5; 
-    line-height: 1.25;
-    display:block;
-    padding-left:40px;
-    float: left;
-
-}
 
 .email:hover span {
     display:none;
@@ -461,74 +255,214 @@ footer{
 }
 
 .email:hover:before {
-    border-bottom: 1px solid black;
-    content:"Keep Scrolling";
+    border-bottom: none;
+    content:"aystowers@gmail.com";
     color:#000;
 }
 
-.instagram:hover span {
-    border-bottom: 2px solid white;
-    color:#fff;
-    transition: 300ms;
-}
 
 
-.descriptiontext{
-    font-size: 20; 
-    letter-spacing: -.5; 
-    line-height: 1.3;
-    padding-left:40;
-    padding-right:40;
-    display:block;
-    float: left;
 
 
-}
 
-#div3{
-  width:50%;
-}
-#div4{
-  width:50%;
-}
-
-#div5{
-  display: none;
-}
-
-.marquee {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    overflow: none;
-    margin: 0;
-    padding: 0;
-}
-
-.marquee img{
-  width: 34vh !important;    
-
-}
-
-}
-
-
-/* BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3   */
-
-@media screen and (max-width:799px) and (min-width: 500px){
-
-section{
-    position: relative;
+.post img{
     width:100%;
-    z-index: 10;
-    background: #fff;
 }
 
-.margin{
-  min-height: 760;
+.post video{
+    width:100%;
+}
+
+.post{
+    padding-left:0vw;
+    padding-right:1vw;
+    padding-bottom: 1.4vw;
+    display: inline-block;
+}
+
+.description{
+    font-size: 12px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight:300; 
+    padding-right:4vw;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+.description span{
+    display: none;
+}
+
+
 
 }
+
+
+/* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
+
+@media screen and (max-width:1399px) and (min-width: 900px){
+
+
+
+
+
+.nav {
+    float: left;
+    font-size: 14; 
+    font-weight: 300; 
+    text-align: left;
+    padding-left:4vw;
+    padding-top: 18px;
+    color:white;
+    mix-blend-mode: exclusion;
+    position: fixed;
+    text-transform: uppercase;
+    width:100%;
+    border-bottom: solid 1px;
+}
+
+.nav-mobile{
+    display: none;
+}
+
+#div1 {
+    font-size: 38; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 300; 
+    float: left;
+}
+
+#div2 { 
+    font-size: 38; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 300; 
+    float: left;
+    color:#000;
+    padding-top: 120px;
+    margin-left: 50%;
+}
+
+
+.title{
+    line-height: 1.13;
+    padding-left:4vw;
+    padding-right:7vh;
+    padding-top: 120px;
+  
+    position: fixed;
+}
+
+.contact{
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 300; 
+    line-height: 1.12;
+    padding-left:4vw;
+    padding-right:7vh;
+    position: fixed;
+    bottom: 6vh;
+    margin: 0 auto;
+}
+
+
+#div2 { 
+    font-size: 38; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 300; 
+    float: left;
+    color:#000;
+    padding-top: 120px;
+    margin-left: 50%;
+}
+
+
+
+.services{
+    line-height: 1.13;
+    padding-right:4vw;
+}
+
+
+.email:hover span {
+    display:none;
+    color:#fff;
+}
+
+.email:hover:before {
+    border-bottom: none;
+    content:"aystowers@gmail.com";
+    color:#000;
+}
+
+
+
+
+
+
+.post img{
+    width:100%;
+}
+
+.post video{
+    width:100%;
+}
+
+.post{
+
+    padding-left:0vw;
+    padding-bottom: 1.5vw;
+    display: inline-block;
+}
+
+
+.description{
+    font-size: 10px; 
+    line-height: 12px;
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight:300; 
+    padding-right:4vw;
+    padding-top: 6px;
+    text-transform: uppercase;
+}
+.description span{
+    display: ;
+}
+
+}
+
+   
+
+
+/* BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2   */
+
+
+@media screen and (max-width:899px) and (min-width: 500px){
+
+
+.nav-mobile {
+    float: left;
+    font-size: 14; 
+    font-weight: 300; 
+    line-height: 18px;
+    text-align: left;
+    padding-left:40px;
+    padding-top: 18px;
+    color:white;
+    mix-blend-mode: exclusion;
+    position: fixed;
+    text-transform: uppercase;
+    width:100%;
+    border-bottom: solid 1px;
+}
+
+.nav {
+    display: none;
+}
+
 
 #div1 {
     font-size: 36; 
@@ -539,21 +473,23 @@ section{
     height:100px;
     float: left;
     color:#000;
-    background-color: #fff;
 
 }
 
 .title{
+    font-size: 36; 
     line-height: 1.13;
     padding-left:40px;
     padding-right:7vh;
-    padding-top: 40px;
+    padding-top: 120px;
     display:block;
+    position:fixed;
+    mix-blend-mode: exclusion;
+    color:white;
 }
 
 .contact{
     display: none;
-    color:#fff;
 }
 
 #div2 { 
@@ -570,72 +506,46 @@ section{
 .services{
     line-height: 1.13;
     padding-left:40px;
-    padding-right:7vh;
-    padding-top: 10px;
+    padding-right:40px;
+    padding-top: 100px;
     padding-bottom: 45;
+    font-size: 36; 
 }
 
-#div5 { 
-    font-size: 36; 
+
+
+
+.post img{
+    width:100%;
+}
+
+.post video{
+    width:100%;
+}
+
+.post{
+    padding-left:0vw;
+    padding-top: 3vw;
+    display: inline-block;
+}
+
+
+.description{
+    font-size: 10px; 
     font-style: normal; 
     font-variant: normal; 
-    width: 100%; 
-    height: 240; 
-    float: left;
-    color:#fff;
-    background-color: #000;
-    padding-top: 45;
+    font-weight:300; 
+    padding-right:4vw;
+    padding-top: 8px;
+    text-transform: uppercase;
 }
 
-
-.descriptiontext_mobile{
-    font-size: 20; 
-    letter-spacing: -.5; 
-    line-height: 1.3;
-    padding-left:40;
-    padding-right: 50;
-    width: 100%;
-    float: left;
-
-}
-
-.descriptiontext_contact_mobile{
-    font-size: 38; 
-    letter-spacing: -.5; 
-    line-height: 1.25;
-    padding-left:40px;
-    padding-top: 28;
-    width: 100%;
-    float: left;
-    padding-bottom: 40;
-}
-
-.descriptiontext_contact_mobile a:hover {
-    color:#fff;
-    border-bottom: 2px solid white;
-    transition: 300ms;
-}
-
-footer{
+.description span{
     display: none;
-    height:0;
-
 }
 
-
-.marquee {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    overflow: none;
-    margin: 0;
-    padding: 0;
-}
-
-.marquee img{
-  width: 34vh !important;    
-
+p span{
+        font-size: 24px; 
 }
 
 }
@@ -644,20 +554,23 @@ footer{
 
 @media screen and (max-width:499px) and (min-width: 100px){
 
-
-.theBall{
-  display: none;
-}
-
-section{
-    position: relative;
+.nav-mobile {
+    float: left;
+    font-size: 11; 
+    font-weight: 300; 
+    text-align: left;
+    padding-left:40px;
+    padding-top: 18px;
+    color:white;
+    mix-blend-mode: exclusion;
+    position: fixed;
+    text-transform: uppercase;
     width:100%;
-    z-index: 10;
-    background: #fff;
+    border-bottom: solid 1px;
 }
 
-.margin{
-  min-height: 960;
+.nav{
+    display: none;
 }
 
 #div1 {
@@ -669,21 +582,23 @@ section{
     height:100px;
     float: left;
     color:#000;
-    background-color: #fff;
 
 }
 
 .title{
+    font-size: 9vw; 
     line-height: 1.13;
-    padding-left:30px;
+    padding-left:40px;
     padding-right:7vh;
-    padding-top: 40px;
+    padding-top: 120px;
     display:block;
+    position:fixed;
+    mix-blend-mode: exclusion;
+    color:white;
 }
 
 .contact{
     display: none;
-    color:#fff;
 }
 
 #div2 { 
@@ -699,80 +614,48 @@ section{
 
 .services{
     line-height: 1.13;
-    padding-left:30px;
-    padding-right:7vh;
-    padding-top: 0;
+    padding-left:40px;
+    padding-right:40px;
+    padding-top: 100px;
     padding-bottom: 45;
+    font-size: 36; 
 }
 
-#div5 { 
-    font-size: 9vw; 
+
+
+
+.post img{
+    width:100%;
+}
+
+.post video{
+    width:100%;
+}
+
+.post{
+    padding-left:0vw;
+    padding-top: 3vw;
+    display: inline-block;
+}
+
+
+.description{
+    font-size: 9px; 
     font-style: normal; 
     font-variant: normal; 
-    width: 100%; 
-    height: 240; 
-    float: left;
-    color:#fff;
-    background-color: #000;
-    padding-top: 45;
+    font-weight:300; 
+    padding-right:4vw;
+    padding-top: 8px;
+    text-transform: uppercase;
 }
 
-
-.descriptiontext_mobile{
-    font-size: 6vw; 
-    letter-spacing: -.5; 
-    line-height: 1.3;
-    padding-left:40;
-    padding-right: 50;
-    width: 100%;
-    float: left;
-
-}
-
-.descriptiontext_contact_mobile{
-    font-size: 38; 
-    letter-spacing: -.5; 
-    line-height: 1.25;
-    padding-left:40px;
-    padding-top: 28;
-    width: 100%;
-    float: left;
-    padding-bottom: 40;
-}
-
-.descriptiontext_contact_mobile a:hover {
-    color:#fff;
-}
-
-footer{
+.description span{
     display: none;
-    height:0;
+}
 
+p span{
+        font-size: 24px; 
 }
 
 
-.marquee {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    overflow: none;
-    margin: 0;
-    padding: 0;
 }
-
-.marquee img{
-  width: 200px !important;    
-
-}
-
-}
-
-
-
-
-
-
-
-
-
