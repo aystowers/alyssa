@@ -144,7 +144,7 @@ a:visited {
 }
 
 .post{
-    font-size: 14px; 
+
     font-style: normal; 
     font-variant: normal; 
     font-weight:300; 
@@ -281,12 +281,12 @@ a:visited {
 }
 
 .description{
-    font-size: 12px; 
+    font-size: 14px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight:300; 
     padding-right:4vw;
-    padding-top: 10px;
+    padding-top: 8px;
     text-transform: ;
 }
 .description span{
@@ -419,7 +419,7 @@ a:visited {
 
 
 .description{
-    font-size: 10px; 
+    font-size: 12px; 
     line-height: 12px;
     font-style: normal; 
     font-variant: normal; 
@@ -429,7 +429,7 @@ a:visited {
     text-transform: ;
 }
 .description span{
-    display: ;
+    display: none;
 }
 
 }
@@ -531,12 +531,12 @@ a:visited {
 
 
 .description{
-    font-size: 10px; 
+    font-size: 12px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight:300; 
     padding-right:4vw;
-    padding-top: 8px;
+    padding-top: 6px;
     text-transform: ;
 }
 
@@ -640,12 +640,12 @@ p span{
 
 
 .description{
-    font-size: 9px; 
+    font-size: 12px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight:300; 
     padding-right:4vw;
-    padding-top: 8px;
+    padding-top: 6px;
     text-transform: ;
 }
 
