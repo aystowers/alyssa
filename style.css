@@ -620,11 +620,11 @@ p span{
 
 .nav-mobile {
     float: left;
-    font-size: 14; 
+    font-size: 12; 
     font-weight: 300; 
     line-height: 18px;
     text-align: left;
-    padding-left:40px;
+    padding-left:20px;
     padding-top: 18px;
     position: fixed;
     text-transform: uppercase;
