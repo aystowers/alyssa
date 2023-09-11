@@ -22,7 +22,7 @@ html, body{
 
 
 
-
+/* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
 
 @media screen and (min-width:900px){
 
@@ -207,20 +207,19 @@ img, video {
 
 
 
+/* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
 
 
-
-@media screen and (max-width: 899px) and (min-width: 100px){
+@media screen and (max-width: 899px) and (min-width: 600px){
 
 .header {
     position: fixed;
-    font-size: 4.4vw;
+    font-size: 32px;
     width: 100%;
     letter-spacing: -.1;
-    line-height: 4.6vw;
-    top:-1.8vw;
+    line-height: 35px;
+    top:-18px;
     z-index: 1;
-
 
     mix-blend-mode: exclusion;
     color: white;
@@ -242,10 +241,10 @@ img, video {
 }
 
 .info p{
-    padding-right: 2vw;
+    padding-right: 20px;
 }
 .name p{
-    padding-left: 2vw;
+    padding-left: 20px;
 }
 
 .header a {
@@ -299,17 +298,6 @@ transform-origin: 100% 50%;}
 
 
 
-.descriptiontext{
-    font-size: 4.2vh; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight:300; 
-    line-height: 4.8vh;
-    padding-left:4vh;
-    padding-right:4vw;
-    display:none;
-}
-
 
 
 
@@ -336,19 +324,11 @@ img, video {
 
 .right img{
     float: right;
-    padding-right: 2vw;
+    padding-right: 20px;
 }
 .right p{
         float: right;
         font-size: 24px;
-}
-
-.text{
-    color: #fff;
-    opacity:0;
-    position: relative;
-    text-align: center;
-    bottom: 48;
 }
 
 
@@ -361,16 +341,158 @@ img, video {
 
 #div1 p{
     text-align: left;
-    padding-left: 1.7vw;
-    padding-right: 1.7vw;
+    padding-left: 20px;
+    padding-right: 20px;
 
     font-size: 36px;
     letter-spacing: -.1;
     line-height: 36px;
 
+}
+
 
 }
 
+
+/* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
+
+
+@media screen and (max-width: 599px) and (min-width: 20px){
+
+.header {
+    position: fixed;
+    font-size: 26px;
+    width: 100%;
+    letter-spacing: -.1;
+    line-height: 30px;
+    top:-12px;
+    z-index: 1;
+
+    mix-blend-mode: exclusion;
+    color: white;
+}
+
+
+
+.name{
+  float:left;
+  display:inline; 
+  width:50%;
+}
+
+.info{
+  float:right;
+  display:inline; 
+  width:50%;
+  text-align: right;
+}
+
+.info p{
+    padding-right: 20px;
+}
+.name p{
+    padding-left: 20px;
+}
+
+.header a {
+  color:inherit;
+  text-decoration: none;
+    position: relative;
+
+}
+
+.header a:after{    
+    transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+transform-origin: 100% 50%;}
+
+
+.header a:visited {
+    color: inherit;
+}
+
+
+.header a:hover:after{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 0;    
+    left:0;
+    bottom: 1px;                   
+    border-bottom: 1.6px solid #fff;  
+
+  transform: scaleX(1); 
+  transform-origin:   0% 50%; 
+}
+
+
+#div1 a {
+    color:#000;
+    text-decoration: none;
+    position: relative;
+
+}
+
+#div1 a:visited {
+    color: #000;
+}
+
+
+
+#checker{
+    margin-top: 31vh;
+}
+
+
+
+
+img, video {
+    height: 62px;
+    padding-top:12px;
+    padding-bottom: 12px;
+
+}
+
+.left{
+    width:60%;
+    display:inline; 
+ float: left;
+
+}
+.right{
+    width:40%;
+    display:inline; 
+    float: left;
+
+}
+
+.right img{
+    float: right;
+    padding-right: 20px;
+}
+.right p{
+        float: right;
+        font-size: 24px;
+}
+
+
+#div1 { 
+    width: 100%; 
+    float: left; 
+    border-top: 1.6px solid #000;
+}
+
+#div1 p{
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: 28px;
+    letter-spacing: -.1;
+    line-height: 28px;
+
+
+}
 
 
 

@@ -318,15 +318,15 @@ overflow-clip-margin: content-box;
 
 
 
-@media screen and (max-width: 899px) and (min-width: 100px){
+@media screen and (max-width: 899px) and (min-width: 600px){
 
 .header {
     position: fixed;
-    font-size: 4.4vw;
+    font-size: 32px;
     width: 100%;
     letter-spacing: -.1;
-    line-height: 4.6vw;
-    top:-1.8vw;
+    line-height: 35px;
+    top:-18px;
     z-index: 1;
 
     mix-blend-mode: exclusion;
@@ -349,10 +349,10 @@ overflow-clip-margin: content-box;
 }
 
 .info p{
-    padding-right: 2vw;
+    padding-right: 20px;
 }
 .name p{
-    padding-left: 2vw;
+    padding-left: 20px;
 }
 
 a {
@@ -601,3 +601,289 @@ overflow-clip-margin: content-box;
 
 
 }
+
+
+@media screen and (max-width: 599px) and (min-width: 20px){
+
+.header {
+    position: fixed;
+    font-size: 26px;
+    width: 100%;
+    letter-spacing: -.1;
+    line-height: 30px;
+    top:-12px;
+    z-index: 1;
+
+    mix-blend-mode: exclusion;
+    color: white;
+}
+
+
+
+.name{
+  float:left;
+  display:inline; 
+  width:50%;
+}
+
+.info{
+  float:right;
+  display:inline; 
+  width:50%;
+  text-align: right;
+}
+
+.info p{
+    padding-right: 20px;
+}
+.name p{
+    padding-left: 20px;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+    position: relative;
+
+}
+
+a:after{    
+    transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+transform-origin: 100% 50%;}
+
+
+a:visited {
+    color: inherit;
+}
+
+
+a:hover:after{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 0;    
+    left:0;
+    bottom: 1px;                   
+    border-bottom: 1.5px solid #fff;  
+
+  transform: scaleX(1); 
+  transform-origin:   0% 50%; 
+}
+
+
+
+
+#checker{
+    margin-top: 31vh;
+}
+
+
+
+.descriptiontext{
+    font-size: 4.4vh; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight:300; 
+    line-height: 4.8vh;
+    padding-left:4.2vh;
+    padding-right:4.2vw;
+    display:none;
+}
+
+
+.featured_image {
+  background-color: #f5f5f5;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+img{
+overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+video{
+overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.featured_image img, .featured_image video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+
+}
+
+
+.text{
+    color: #fff;
+    opacity:0;
+    position: relative;
+    text-align: center;
+    bottom: 48;
+}
+
+
+.featured_image:hover {
+     -webkit-filter: brightness(2%);
+    transition: all 0.3s ease;
+
+}
+
+
+
+#div1 {
+    width: 50%; 
+    height: 20%; 
+    float: left;
+}
+
+#div1 .featured_image:hover{
+      cursor: url('logo_op.svg'), auto;
+
+}
+
+#div2 { 
+    width: 50%; 
+    height: 20%; 
+    float: left;
+    overflow:scroll;
+}
+
+
+#div3 { 
+    width: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+    padding-left: 50%;
+}
+
+#div3 .featured_image:hover{
+      cursor: url('logo_casper.svg'), auto;
+}
+
+
+#div4 { 
+    width: 0%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+
+#div5 { 
+    width: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+    color:white;
+}
+
+#div5 .featured_image:hover{
+      cursor: url('logo_koala.svg'), auto;
+}
+
+#div6 { 
+    width: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div7 { 
+    width: 50%; 
+    padding-left: 50%;
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+
+}
+
+#div7 .featured_image:hover{
+      cursor: url('logo_ba.svg'), auto;
+}
+
+#div8 { 
+    width: 0%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div9 { 
+    width: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+#div9 .featured_image:hover{
+      cursor: url('logo_nyr.svg'), auto;
+}
+
+#div10 { 
+    width: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div11 { 
+    width: 50%;
+    padding-left: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div11 .featured_image:hover{
+      cursor: url('logo_ad.svg'), auto;
+}
+
+#div12 { 
+    width: 0%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div13 { 
+    width: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div13 .featured_image:hover{
+      cursor: url('logo_vog.svg'), auto;
+}
+
+#div14 { 
+    width: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div15 { 
+    width: 50%; 
+    padding-left: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div15 .featured_image:hover{
+      cursor: url('logo_wir.svg'), auto;
+}
+
+
+
+}
+
