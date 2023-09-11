@@ -36,11 +36,19 @@ $(document).ready(function() {
 });
 </script>
 
+    <script>
+
+        $(window).scroll(function(){
+            $("span").css("opacity", 1 - $(window).scrollTop() / 140);
+          });
+    </script>
+
+
 
 
     <div class="header">
 
-            <div class="name"><p><a href="index.html">Alyssa Stowers</a> is an Art Director and Designer based in New York.</p></div>
+            <div class="name"><p><span><a href="index.html">Alyssa Stowers</a> is an Art Director and Designer based in New York.</span></p></div>
 
             <div class="info"><p><a href="index.html">Work,</a> <a href="table_of_contents_index.html">Index,</a> <a href="info.html">Info</a></p></div>
     </div>
@@ -117,7 +125,7 @@ $(document).ready(function() {
         <div id="div1">
             <a href="event_flyers.html">
                 <div class="left"><p>Event Flyers</p></div> 
-                <div class="right"><img src="img/flyer_index.png"></div>
+                <div class="right"><img src="img/flyer_index.jpg"></div>
             </a>
         </div> 
 
@@ -145,7 +153,7 @@ $(document).ready(function() {
         <div id="div1">
             <a href="https://soundcloud.com/alyssastowers">
                 <div class="left"><p>Audio</p></div> 
-                <div class="right"><img src="img/audio_index.jpg"></div>
+                <div class="right"><p>&#127926; </p></div>
             </a>
         </div>
 

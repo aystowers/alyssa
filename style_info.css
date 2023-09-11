@@ -6,6 +6,7 @@ html, body{
     font-family: "arrow";
     letter-spacing: -.2px;
     font-weight:300;
+    background-color: #fff;
 }
 
 ::-webkit-scrollbar { 
@@ -30,6 +31,10 @@ html, body{
     letter-spacing: -.1;
     line-height: 3.5vw;
     top:-1.6vw;
+    z-index: 1;
+
+    mix-blend-mode: exclusion;
+    color: white;
 }
 
 
@@ -48,37 +53,39 @@ html, body{
 
 .info p{
     padding-right: 1.7vw;
+    color:white;
+    mix-blend-mode: exclusion;
 }
 .name p{
     padding-left: 1.7vw;
 }
 
 a {
-  color:#000;
+  color:inherit;
   text-decoration: none;
     position: relative;
 
 }
 
-a:after{    
+.header a:after{    
     transform: scaleX(0);  
     transition: all 0.3s ease;
     transform-origin: 100% 50%;}
 
 
 a:visited {
-    color: #000;
+    color: inherit;
 }
 
 
-a:hover:after{
+.header a:hover:after{
     content:'';
     position:absolute;
     width: 100%;
     height: 0;    
     left:0;
     bottom: 1px;                   
-    border-bottom: 2px solid #000;  
+    border-bottom: 2px solid #fff;  
   transform: scaleX(1); 
   transform-origin:   0% 50%; 
 }
@@ -143,8 +150,7 @@ overflow-clip-margin: content-box;
 
 
 .featured_image:hover {
-     -webkit-filter: brightness(2%);
-    transition: all 0.3s ease;
+
 
 }
 
@@ -283,6 +289,11 @@ overflow-clip-margin: content-box;
     letter-spacing: -.1;
     line-height: 4.6vw;
     top:-1.8vw;
+    z-index: 1;
+
+
+    mix-blend-mode: exclusion;
+    color: white;
 }
 
 
@@ -308,31 +319,31 @@ overflow-clip-margin: content-box;
 }
 
 a {
-  color:#000;
+  color:inherit;
   text-decoration: none;
     position: relative;
 
 }
 
-a:after{    
+.header a:after{    
     transform: scaleX(0);  
   transition: transform 250ms ease-in-out;
 transform-origin: 100% 50%;}
 
 
 a:visited {
-    color: #000;
+    color: inherit;
 }
 
 
-a:hover:after{
+.header a:hover:after{
     content:'';
     position:absolute;
     width: 100%;
     height: 0;    
     left:0;
     bottom: 1px;                   
-    border-bottom: 1.5px solid #000;  
+    border-bottom: 1.5px solid #fff;  
 
   transform: scaleX(1); 
   transform-origin:   0% 50%; 
@@ -398,8 +409,7 @@ overflow-clip-margin: content-box;
 
 
 .featured_image:hover {
-     -webkit-filter: brightness(2%);
-    transition: all 0.3s ease;
+
 
 }
 

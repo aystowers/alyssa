@@ -6,6 +6,8 @@ html, body{
     font-family: "arrow";
     letter-spacing: -.2px;
     font-weight:300;
+
+background-color: #fff;
 }
 
 ::-webkit-scrollbar { 
@@ -42,6 +44,10 @@ html, body{
     letter-spacing: -.1;
     line-height: 3.5vw;
     top:-1.6vw;
+    z-index: 1;
+
+    mix-blend-mode: exclusion;
+    color: white;
 }
 
 
@@ -66,7 +72,7 @@ html, body{
 }
 
 a {
-  color:#000;
+  color:inherit;
   text-decoration: none;
     position: relative;
 
@@ -79,7 +85,7 @@ a:after{
 
 
 a:visited {
-    color: #000;
+    color: inherit;
 }
 
 
@@ -90,9 +96,9 @@ a:hover:after{
     height: 0;    
     left:0;
     bottom: 1px;                   
-    border-bottom: 2px solid #000;  
-  transform: scaleX(1); 
-  transform-origin:   0% 50%; 
+    border-bottom: 2px solid #fff;  
+    transform: scaleX(1); 
+    transform-origin:   0% 50%; 
 }
 
 
@@ -321,6 +327,10 @@ overflow-clip-margin: content-box;
     letter-spacing: -.1;
     line-height: 4.6vw;
     top:-1.8vw;
+    z-index: 1;
+
+    mix-blend-mode: exclusion;
+    color: white;
 }
 
 
@@ -346,7 +356,7 @@ overflow-clip-margin: content-box;
 }
 
 a {
-  color:#000;
+  color:inherit;
   text-decoration: none;
     position: relative;
 
@@ -359,7 +369,7 @@ transform-origin: 100% 50%;}
 
 
 a:visited {
-    color: #000;
+    color: inherit;
 }
 
 
@@ -370,7 +380,7 @@ a:hover:after{
     height: 0;    
     left:0;
     bottom: 1px;                   
-    border-bottom: 1.5px solid #000;  
+    border-bottom: 1.5px solid #fff;  
 
   transform: scaleX(1); 
   transform-origin:   0% 50%; 
