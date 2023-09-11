@@ -1,48 +1,80 @@
 <html>
     <head>
         <title>Alyssa Stowers</title>
-        <meta name="title" content="Alyssa Stowers">
+        <meta name="title" content="TEMP">
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0 minimal-ui">
-        <link rel="stylesheet" href="style.css"/>
+
+        <link rel="stylesheet" href="style_work.css?new3"/>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="icon" href="img/spin.png">
 
-    <meta name="description" content="Alyssa Stowers — Illustration">
-    <meta name="keywords" content="Graphic Design, Design, Design Portfolio, Digital Design, Print Design, Animation, Portfolio Site, Alyssa Stowers, ">
 
+        <link rel="icon" href="images/alyssa.png">
 
     </head>
 
-<body>
+    <body>
 
-    <div class="nav">
-  
-        <p>Alyssa Stowers is a Graphic Designer and Art Director based in New York</p><br>
-  
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("body").css("display", "none");
+ 
+    $("body").fadeIn(200);
+ 
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(200, redirectPage);      
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+
+
+    <script>
+
+        $(window).scroll(function(){
+            $("span").css("opacity", 1 - $(window).scrollTop() / 60);
+          });
+    </script>
+
+
+    <div class="header">
+
+            <div class="name"><p><a href="index.html">Alyssa Stowers</a> is an Art Director and Designer based in New York.</p></div>
+
+            <div class="info"><p><a href="index.html">Work,</a> <a href="table_of_contents_index.html">Index,</a> <a href="info.html">Info</a></p></div>
     </div>
 
 
 
-    <div class="nav-mobile">
-  
-        <p>Alyssa Stowers is a Graphic Designer and Art Director<br>Contact: aystowers@gmail.com</p><br>
-  
-    </div>
 
 
 
-    <div id="div1">     
-      <div class="title">
-            <p><a href="index.html">Select Work —</a><br><span>Illustration</span></p>
-      </div>
-
-        <div class="contact">
-            <p><div class="email"><span>Info</span></div></a></p>
-        </div>
 
 
-    </div>
+
+
+
+
+
+
+
+<div id="checker">    
+
+
+ <div id="div1">
+
+                <div class="text">
+                    <p>Illustration<br>
+                </div>
+</div>
 
 
 <div id="div2">
