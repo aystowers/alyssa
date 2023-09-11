@@ -417,14 +417,14 @@ overflow-clip-margin: content-box;
 
 
 #div1 {
-    width: 20%; 
+    width: 50%; 
     height: 23%; 
     float: left;
 }
 
 
 #div2 { 
-    width: 20%; 
+    width: 50%; 
     height: 23%; 
     float: left;
     overflow:scroll;
@@ -432,17 +432,17 @@ overflow-clip-margin: content-box;
 
 
 #div3 { 
-    width: 20%; 
+    width: 0%; 
     height: 23%; 
     float: left; 
     overflow:scroll;
+
 }
 
 
 
-
 #div4 { 
-    width: 20%; 
+    width: 50%; 
     height: 23%; 
     float: left; 
     overflow:scroll;
@@ -450,11 +450,6 @@ overflow-clip-margin: content-box;
 
 
 #div5 { 
-    width: 20%; 
-    height: 23%; 
-    float: left; 
-    overflow:scroll;
-    color:white;
 }
 
 
