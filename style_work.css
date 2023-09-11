@@ -185,10 +185,10 @@ a:hover:after{
 
 .header {
     position: fixed;
-    font-size: 4vw;
+    font-size: 4.4vw;
     width: 100%;
     letter-spacing: -.1;
-    line-height: 4.2vw;
+    line-height: 4.6vw;
     top:-1.8vw;
 }
 

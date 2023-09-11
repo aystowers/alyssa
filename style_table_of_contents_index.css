@@ -19,7 +19,7 @@ html, body{
 
 
 
-@media screen and (min-width:800px){
+@media screen and (min-width:900px){
 
 
 
@@ -185,16 +185,17 @@ img, video {
 
 
 
-@media screen and (max-width: 799px) and (min-width: 100px){
+@media screen and (max-width: 899px) and (min-width: 100px){
 
 .header {
     position: fixed;
-    font-size: 4vw;
+    font-size: 4.4vw;
     width: 100%;
     letter-spacing: -.1;
-    line-height: 4.2vw;
+    line-height: 4.6vw;
     top:-1.8vw;
 }
+
 
 
 .name{
