@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <title>OFCOURSE Studio</title>
+        <meta name="title" content="TEMP">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 minimal-ui">
+
+        <link rel="stylesheet" href="style.css?new3"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+        <link rel="icon" href="images/ofcourse_logo.png">
+
+    </head>
+
+    <body>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("body").css("display", "none");
+ 
+    $("body").fadeIn(200);
+ 
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(200, redirectPage);      
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+        <script>
+            $(document).ready(function(){
+
+
+                (function ($, window, undefined) {
+                    $.fn.marqueeify = function (options) {
+                        var settings = $.extend({
+                            horizontal: true,
+                            vertical: true,
+                            speed: 100, // In pixels per second
+                            container: $(this).parent(),
+                            bumpEdge: function () {}
+                        }, options);
+
+                        return this.each(function () {
+                            var containerWidth, containerHeight, elWidth, elHeight, move, getSizes,
+                                $el = $(this);
+
+                            getSizes = function () {
+                                containerWidth = settings.container.outerWidth();
+                                containerHeight = settings.container.outerHeight();
+                                elWidth = $el.outerWidth();
+                                elHeight = $el.outerHeight();
+                            };
+
+                            move = {
+                                right: function () {
+                                    $el.animate({left: (containerWidth - elWidth)}, {duration: ((containerWidth/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+                                        settings.bumpEdge();
+                                        move.left();
+                                    }});
+                                },
+                                left: function () {
+                                    $el.animate({left: 0}, {duration: ((containerWidth/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+                                        settings.bumpEdge();
+                                        move.right();
+                                    }});
+                                },
+                                down: function () {
+                                    $el.animate({top: (containerHeight - elHeight)}, {duration: ((containerHeight/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+                                        settings.bumpEdge();
+                                        move.up();
+                                    }});
+                                },
+                                up: function () {
+                                    $el.animate({top: 0}, {duration: ((containerHeight/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+                                        settings.bumpEdge();
+                                        move.down();
+                                    }});
+                                }
+                            };
+
+                            getSizes();
+
+                            if (settings.horizontal) {
+                                move.right();
+                            }
+                            if (settings.vertical) {
+                                move.down();
+                            }
+
+                      // Make that shit responsive!
+                      $(window).resize( function() {
+                        getSizes();
+                      });
+                        });
+                    };
+                })(jQuery, window);
+
+                $(document).ready( function() {
+
+                  var x = document.getElementById("myAudio"); 
+
+                function playAudio() { 
+                  x.pause()
+                  x.currentTime = 0;
+                  x.play(); 
+                } 
+
+                function pauseAudio() { 
+                    x.pause(); 
+                } 
+
+                    $('.marquee').marqueeify({
+                        speed: 80,
+                        bumpEdge: function () {
+                            var newColor = "hsl(" + Math.floor(Math.random()*360) + ", 100%, 50%)";
+                            $('.marquee .logo').css('fill', newColor);
+
+
+                    // playAudio();
+                        }
+                    });
+                });  
+                /* DOCUMENT READY */
+            });
+            
+            
+            
+        </script>
+            
+            
+        
+        <div class="marquee" style="opacity: 2;">
+            <img src="img/ofc_spinning.gif">
+        </div>
+    
+
+
+<body>
+
+<div id="div1">
+    <h1>Ofcourse is an independent creative studio and collective based in New York City. We believe in form and function, striving to create good design for good people.</h1>
+</div>
+
+
+<div id="div2">
+  <h1>About</h1>
+  <div class="descriptiontext">
+      <p>Founded in 2019 by Kelly Godzik and Alyssa Stowers, Ofcourse is based on a mutual understanding that good projects are made by people, not brands. In partnering with likeminded creatives who share similar interests and goals, we produce accessible concepts that allow our clients tell stories and engage audiences.<br><br>
+
+      Our approach is simple; the best answer to any problem is to create a tailor-made solution. Depending on the nature of the project, we work with a network of specialists in different fields of design and technology. Through collaboration, new ideas emerge and existing products grow. 
+
+        
+      </p>
+  </div>
+</div>
+
+
+
+<div id="div3">
+  <h1><div class="underline">Services</div></h1>
+  <div class="descriptiontext">
+               <p>Graphic Design<br>
+                  Brand Strategy<br>
+                  Naming<br>
+                  Messaging<br>
+                  Visual Identity<br>
+                  Brand guidelines<br>
+                  Creative Direction<br>
+                  User Experience<br>
+                  User Interface<br>
+                  Visual Design<br>
+                  Print<br>
+                  Signage<br>
+                  Photo<br>
+                  Motion/Video<br>
+                  Copywriting<br>
+                  Social Content<br>
+                  Illustrations<br>
+                  Email<br>
+                  Campaigns<br>
+                  Paid Media<br>
+                  Content Marketing<br>
+                  Analytics
+                </p>
+  </div>
+</div>
+
+
+
+
+
+
+<div id="div4">
+    <h1>Contact</h1>
+    <div class="descriptiontext">
+    <p>For all general inquires, please email <a class="dottedline" href="mailto:aystowers@gmail.com">office@ofcoursestudio.com</a></p>
+    <a href="https://www.instagram.com/ofcoursestudio/" target="_blank">Instagram</a> 
+  </div>
+</div>
+
+
+<!--
+
+<div id="div4">
+  <h1>Work </h1>
+  <div class="work">
+    <img src="img/work.gif">
+    
+  </div>
+</div>
+
+-->
+
+<!--&#x25cf; -->     
+        
+        
+    </body>
+</html>

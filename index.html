@@ -1,85 +1,198 @@
 <html>
     <head>
         <title>Alyssa Stowers</title>
-        <meta name="title" content="Alyssa Stowers">
+        <meta name="title" content="TEMP">
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0 minimal-ui">
-        <link rel="stylesheet" href="style.css"/>
+
+        <link rel="stylesheet" href="style.css?new3"/>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="icon" href="img/spin.png">
 
-    <meta name="description" content="Design Portfolio of Alyssa Stowers">
-    <meta name="keywords" content="Graphic Design, Design, Design Portfolio, Digital Design, Print Design, Animation, Portfolio Site, Alyssa Stowers, ">
 
+        <link rel="icon" href="images/alyssa.png">
 
     </head>
 
-<body>
+    <body>
 
 
+<script type="text/javascript">
+$(document).ready(function() {
+    $("body").css("display", "none");
+ 
+    $("body").fadeIn(200);
+ 
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(200, redirectPage);      
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
 
-    <div class="nav">
-  
-        <p>Alyssa Stowers is a Graphic Designer and Art Director based in New York</p><br>
-  
+
+    <script>
+
+        $(window).scroll(function(){
+            $("span").css("opacity", 1 - $(window).scrollTop() / 60);
+          });
+    </script>
+
+
+    <div class="header">
+
+            <div class="name"><p><a href="index.html">Alyssa Stowers</a> is an Art Director and Designer based in New York.</p></div>
+
+            <div class="info"><p><a href="index.html">Work,</a> <a href="table_of_contents_index.html">Index,</a> <a href="info.html">Info</a></p></div>
     </div>
 
 
 
 
-    <div class="nav-mobile">
-  
-        <p>Alyssa Stowers is a Graphic Designer and Art Director<br>Contact: aystowers@gmail.com</p><br>
-  
-    </div>
+
+            
+<div id="checker">           
 
 
+<!--ROW 1-->     
 
+    <a href="our_place.html">
+        <div id="div1">
+            <div class="featured_image">
+                <img src="img/op_index.jpg">
 
+                <div class="text">
+                    <p>Our Place</p>
+                </div>
 
+              </div>
 
-
-
-    <div id="div1">     
-      <div class="title">
-            <p><a href="http://alyssastowers.com">Select Work —</a></p>
-      </div>
-
-        <div class="contact">
-            <p><a href="mailto:aystowers@gmail.com"><div class="email"><span>Info</span></div></a></p>
         </div>
-    </div>
+    </a>
 
 
-    <div id="div2">
-          <div class="services">
-                <a href="our_place.html"><span>Our Place</span></a><br>
-                <a href="casper.html"><span>Casper</span></a><br>
-                <a href="koala.html"><span>Koala Health</span></a><br>
-                <a href="bon_appetit.html"><span>Bon Appétit</span></a><br>
-                <a href="new_yorker.html"><span>The New Yorker</span></a><br>  
-                <a href="architectural_digest.html"><span>Architectural Digest</span></a><br>
-                <a href="vogue.html"><span>Vogue</span></a><br>
-                <a href="wired.html"><span>Wired</span></a><br>
 
-                <br>
 
-                <a href="event_flyers.html"><span>Event Flyers</span><br>
-                <a href="illustration.html"><span>Illustration</span><br>  
-                <a href="spatial_design.html"><span>Spatial Design</span><br>
-                <a href="print.html"><span>Print</span><br>
-                <a href="audio.html"><span>Audio</span></a><br>
-                 
-                
-            </div>  
-
-    </div>
-
-<div class="flier">
-<img width="2400" height="1600" width_o="2400" height_o="1600" data-src="img/dots.svg" data-mid="61065000" border="0" class="image-zoom scroll-transition-fade" src="img/dots.svg" style="width: 1591.625px; height: 1061.083333px;">
-</div>
+        <div id="div2">
+        </div>
  
 
-</body>
+
+
+    <a href="casper.html">
+        <div id="div3">
+            <div class="featured_image">
+                <video preload="metadata" playsinline autoplay loop muted poster="img/casper_index.jpg" alt="Casper TV spot." >
+                <source type="video/mp4" src="img/casper_index.mp4">
+            </div>
+        </div>
+    </a>
+
+
+
   
+        <div id="div4">
+        </div>
+
+
+
+    <a href="koala.html">
+        <div id="div5">
+            <div class="featured_image">
+                <img src="img/koala_index.jpg">
+            </div>
+        </div>
+    </a>
+
+
+<!--ROW 2-->     
+        
+
+
+        <div id="div6">
+        </div>
+
+
+    <a href="bon_appetit.html">
+        <div id="div7">
+            <div class="featured_image">
+                <img src="img/ba_index.jpg">
+            </div>
+        </div>
+    </a>
+
+
+        <div id="div8">
+        </div>
+
+
+    <a href="new_yorker.html">
+        <div id="div9">
+            <div class="featured_image">
+                <img src="img/nyr_index.jpg">
+            </div>
+        </div>
+    </a>
+
+
+    
+        <div id="div10">
+
+        </div>
+
+
+
+<!--ROW 3-->   
+
+
+
+    <a href="architectural_digest.html">
+
+        <div id="div11">
+            <div class="featured_image">
+                <video preload="metadata" playsinline autoplay loop muted poster="img/ad_index.jpg" alt="Casper TV spot." >
+                <source type="video/mp4" src="img/ad_index.mp4">
+            </div>
+        </div>
+    </a>
+
+   
+        <div id="div12">
+
+        </div>
+
+
+    <a href="vogue.html">
+        <div id="div13">
+            <div class="featured_image">
+                <img src="img/vog_index.jpg">
+            </div>
+        </div>
+    </a>
+
+
+        <div id="div14">
+
+        </div>
+  
+
+
+    <a href="wired.html">
+        <div id="div15">
+            <div class="featured_image">
+                <img src="img/wir_index.jpg">
+            </div>
+        </div>
+    </a>
+
+
+</div>
+        
+    </body>
 </html>

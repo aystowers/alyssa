@@ -1,18 +1,24 @@
-*{
-
-    margin: 0 auto;
-
-    
-}
-
-body, html{
-    
+html, body{
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
-    font-family: "Helvetica";
+    overflow: scroll;
+    font-family: "arrow";
+    letter-spacing: -.2px;
     font-weight:300;
-    background: #fffff9;
-
 }
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+@font-face {
+  font-family: arrow;
+  src: url(img/arrow.otf);
+}
+
+
+
 
 
 
@@ -24,706 +30,563 @@ body, html{
 
 
 
-.flier {
-    pointer-events: none;
-}
 
-.flier > * {
-/* Adjust animation duration to change the element’s speed */
-        animation: fly 128s linear infinite;
-        pointer-events: none !important;
-    top: 0;
-    left: 0;
-    transform: translateX(-120%) translateY(-120%) rotateZ(0);
+@media screen and (min-width:800px){
+
+
+
+.header {
     position: fixed;
-    animation-delay: -6s;
-    z-index: 0;
-}
-
- /* Keyframe values control where the element will begin
-    and end its trajectory across the screen. Each rule
-    represents a path the element follows across the screen. */
-
-
-@keyframes fly {
-
-    85%, 0% {
-                display: block;
-        transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
-    }
-
-    15% {
-        transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
-    }
-
-    15.001%, 18% {
-        transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
-    }
-
-    40% {
-        transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
-    }
-
-    40.001%, 43% {
-        transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
-    }
-
-    55% {
-        transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
-    }
-
-    65.001%, 68% {
-        transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
-    }
-
-    65% {
-        transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
-    }
+    font-size: 3.2vw;
+    width: 100%;
+    letter-spacing: -.1;
+    line-height: 3.5vw;
+    top:-1.6vw;
 }
 
 
+.name{
+  float:left;
+  display:inline; 
+  width:60%;
+}
 
+.info{
+  float:right;
+  display:inline; 
+  width:40%;
+  text-align: right;
+}
 
-
-
-
-/* Link Behavior Link Behavior Link Behavior Link Behavior Link Behavior Link Behavior Link Behavior Link Behavior */
+.info p{
+    padding-right: 1.7vw;
+}
+.name p{
+    padding-left: 1.7vw;
+}
 
 a {
-  color:inherit;
+  color:#000;
   text-decoration: none;
-  transition: 300ms;
+    position: relative;
+
 }
+
+a:after{    
+    transform: scaleX(0);  
+    transition: all 0.3s ease;
+    transform-origin: 100% 50%;}
+
 
 a:visited {
-    color:inherit;
+    color: #000;
 }
 
 
-
-
-
-/* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
-
-
-
-@media screen and (max-width:100000000px) and (min-width:1851px){
-
-
-
-
-
-.nav {
-    float: left;
-    font-size: 14; 
-    font-weight: 300; 
-    text-align: left;
-    padding-left:4vw;
-    padding-top: 18px;
-    color:white;
-    mix-blend-mode: exclusion;
-    position: fixed;
-    text-transform: uppercase;
-    width:100%;
-    border-bottom: solid 1px;
-}
-
-.nav-mobile{
-    display: none;
-
-}
-
-
-#div1 {
-    font-size: 38; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    float: left;
-}
-
-#div2 { 
-    font-size: 38; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    float: left;
-    color:#000;
-    padding-top: 120px;
-    margin-left: 50%;
-
-}
-
-
-
-.title{
-    line-height: 1.13;
-    padding-left:4vw;
-    padding-right:7vh;
-    padding-top: 120px;
-    position: fixed;
-}
-
-.contact{
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    line-height: 1.12;
-    padding-left:4vw;
-    padding-right:7vh;
-    position: fixed;
-    bottom: 6vh;
-    margin: 0 auto;
-}
-
-
-
-.services{
-    line-height: 1.13;
-    padding-right:6vw;
-}
-
-
-.email:hover span {
-    display:none;
-    color:#fff;
-}
-
-.email:hover:before {
-    border-bottom: none;
-    content:"aystowers@gmail.com";
-    color:#000;
-}
-
-
-
-
-
-
-.post img{
-    width:100%;
-}
-
-.post video{
-    width:100%;
-}
-
-.post{
-
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight:300; 
-    line-height: 22px;
-    padding-left:0vw;
-    padding-right:4vw;
-    padding-bottom: 1.2vw;
-    display: inline-block;
-}
-
-.description{
-    font-size: 13px; 
-    line-height: 16px;
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight:300; 
-    padding-right:4vw;
-    padding-top: 12px;
-    text-transform: ;
-}
-
-.description span{
-    display: none;
-}
-
-
-}
-
-
-/* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
-
-
-
-@media screen and (max-width:1850px) and (min-width:1400px){
-
-
-
-.nav {
-    float: left;
-    font-size: 14; 
-    font-weight: 300; 
-    text-align: left;
-    padding-left:4vw;
-    padding-top: 18px;
-    color:white;
-    mix-blend-mode: exclusion;
-    position: fixed;
-    text-transform: uppercase;
-    width:100%;
-    border-bottom: solid 1px;
-}
-
-.nav-mobile{
-    display: none;
-}
-
-#div1 {
-    font-size: 38; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    float: left;
-}
-
-#div2 { 
-    font-size: 38; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    float: left;
-    color:#000;
-    padding-top: 120px;
-    margin-left: 50%;
-
-}
-
-
-.title{
-    line-height: 1.13;
-    padding-left:4vw;
-    padding-right:7vh;
-    padding-top: 120px;
-  
-    position: fixed;
-}
-
-.contact{
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    line-height: 1.12;
-    padding-left:4vw;
-    padding-right:7vh;
-    position: fixed;
-    bottom: 6vh;
-    margin: 0 auto;
-}
-
-
-.services{
-    line-height: 1.13;
-    padding-right:4vw;
-}
-
-
-.email:hover span {
-    display:none;
-    color:#fff;
-}
-
-.email:hover:before {
-    border-bottom: none;
-    content:"aystowers@gmail.com";
-    color:#000;
-}
-
-
-
-
-
-
-.post img{
-    width:100%;
-}
-
-.post video{
-    width:100%;
-}
-
-.post{
-    padding-left:0vw;
-    padding-right:1vw;
-    padding-bottom: 1.4vw;
-    display: inline-block;
-}
-
-.description{
-    font-size: 12px; 
-    line-height: 15px;
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight:300; 
-    padding-right:4vw;
-    padding-top: 8px;
-    text-transform: ;
-}
-.description span{
-    display: none;
-}
-
-
-
-}
-
-
-/* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
-
-@media screen and (max-width:1399px) and (min-width: 900px){
-
-
-
-
-
-.nav {
-    float: left;
-    font-size: 14; 
-    font-weight: 300; 
-    text-align: left;
-    padding-left:4vw;
-    padding-top: 18px;
-    color:white;
-    mix-blend-mode: exclusion;
-    position: fixed;
-    text-transform: uppercase;
-    width:100%;
-    border-bottom: solid 1px;
-}
-
-.nav-mobile{
-    display: none;
-}
-
-#div1 {
-    font-size: 38; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    float: left;
-}
-
-#div2 { 
-    font-size: 38; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    float: left;
-    color:#000;
-    padding-top: 120px;
-    margin-left: 50%;
-}
-
-
-.title{
-    line-height: 1.13;
-    padding-left:4vw;
-    padding-right:7vh;
-    padding-top: 120px;
-  
-    position: fixed;
-}
-
-.contact{
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    line-height: 1.12;
-    padding-left:4vw;
-    padding-right:7vh;
-    position: fixed;
-    bottom: 6vh;
-    margin: 0 auto;
-}
-
-
-#div2 { 
-    font-size: 38; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    float: left;
-    color:#000;
-    padding-top: 120px;
-    margin-left: 50%;
-}
-
-
-
-.services{
-    line-height: 1.13;
-    padding-right:4vw;
-}
-
-
-.email:hover span {
-    display:none;
-    color:#fff;
-}
-
-.email:hover:before {
-    border-bottom: none;
-    content:"aystowers@gmail.com";
-    color:#000;
-}
-
-
-
-
-
-
-.post img{
-    width:100%;
-}
-
-.post video{
-    width:100%;
-}
-
-.post{
-
-    padding-left:0vw;
-    padding-bottom: 1.5vw;
-    display: inline-block;
-}
-
-
-.description{
-    font-size: 12px; 
-    line-height: 15px;
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight:300; 
-    padding-right:4vw;
-    padding-top: 6px;
-    text-transform: ;
-}
-.description span{
-    display: none;
-}
-
-}
-
-   
-
-
-/* BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2 BREAKPONT 2   */
-
-
-@media screen and (max-width:899px) and (min-width: 500px){
-
-
-.nav-mobile {
-    float: left;
-    font-size: 14; 
-    font-weight: 300; 
-    line-height: 18px;
-    text-align: left;
-    padding-left:40px;
-    padding-top: 18px;
-    position: fixed;
-    text-transform: uppercase;
-    width:100%;
-    border-bottom: solid 1px;
-    background-color: #fffff9;
-}
-
-.nav {
-    display: none;
-}
-
-
-#div1 {
-    font-size: 36; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
+a:hover:after{
+    content:'';
+    position:absolute;
     width: 100%;
-    height:100px;
-    float: left;
-    color:#000;
-
-}
-
-.title{
-    font-size: 36; 
-    line-height: 1.13;
-    padding-left:40px;
-    padding-right:7vh;
-    padding-top: 120px;
-    display:block;
-    position:fixed;
-    mix-blend-mode: exclusion;
-    color:white;
-}
-
-.contact{
-    display: none;
-}
-
-#div2 { 
-    font-size: 36; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    width: 100%; 
-    float: left;
-    color:#000;
-    display: block;
-}
-
-.services{
-    line-height: 1.13;
-    padding-left:40px;
-    padding-right:40px;
-    padding-top: 100px;
-    padding-bottom: 45;
-    font-size: 36; 
+    height: 0;    
+    left:0;
+    bottom: 1px;                   
+    border-bottom: 2px solid #000;  
+  transform: scaleX(1); 
+  transform-origin:   0% 50%; 
 }
 
 
 
 
-.post img{
-    width:100%;
-}
-
-.post video{
-    width:100%;
-}
-
-.post{
-    padding-left:0vw;
-    padding-top: 3vw;
-    display: inline-block;
+#checker{
+    margin-top: 31vh;
 }
 
 
-.description{
-    font-size: 12px;
-    line-height: 15px; 
+
+.descriptiontext{
+    font-size: 4.2vh; 
     font-style: normal; 
     font-variant: normal; 
     font-weight:300; 
+    line-height: 4.8vh;
+    padding-left:4vh;
     padding-right:4vw;
-    padding-top: 6px;
-    text-transform: ;
+    display:none;
 }
 
-.description span{
-    display: none;
+
+.featured_image {
+  background-color: #fff;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-p span{
-        font-size: 24px; 
+
+
+
+img{
+overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
+video{
+overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
-/* BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3 BREAKPONT 3   */
+.featured_image img, .featured_image video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 
-@media screen and (max-width:499px) and (min-width: 100px){
 
-.nav-mobile {
-    float: left;
-    font-size: 11; 
-    font-weight: 300; 
-    line-height: 18px;
-    text-align: left;
-    padding-left:20px;
-    padding-top: 18px;
-    position: fixed;
-    text-transform: uppercase;
-    width:100%;
-    border-bottom: solid 1px;
-    background-color: #fffff9;
 }
 
-.nav{
-    display: none;
+
+.text{
+    color: #fff;
+    opacity:0;
+    position: relative;
+    text-align: center;
+    bottom: 48;
 }
+
+
+.featured_image:hover {
+     -webkit-filter: brightness(2%);
+    transition: all 0.3s ease;
+
+}
+
+
 
 #div1 {
-    font-size: 9vw; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    width: 100%;
-    height:100px;
+    width: 20%; 
+    height: 23%; 
     float: left;
-    color:#000;
-
 }
 
-.title{
-    font-size: 9vw; 
-    line-height: 1.13;
-    padding-left:20px;
-    padding-right:7vh;
-    padding-top: 120px;
-    display:block;
-    position:fixed;
-    mix-blend-mode: exclusion;
-    color:white;
-}
+#div1 .featured_image:hover{
+      cursor: url('logo_op.svg'), auto;
 
-.contact{
-    display: none;
 }
 
 #div2 { 
-    font-size: 9vw; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 300; 
-    width: 100%; 
+    width: 20%; 
+    height: 23%; 
     float: left;
-    color:#000;
-    display: block;
-}
-
-.services{
-    line-height: 1.13;
-    padding-left:20px;
-    padding-right:20px;
-    padding-top: 100px;
-    padding-bottom: 45;
-    font-size: 36; 
+    overflow:scroll;
 }
 
 
-
-
-.post img{
-    width:100%;
+#div3 { 
+    width: 20%; 
+    height: 23%; 
+    float: left; 
+    overflow:scroll;
 }
 
-.post video{
-    width:100%;
-}
-
-.post{
-    padding-left:0vw;
-    padding-top: 3vw;
-    display: inline-block;
+#div3 .featured_image:hover{
+      cursor: url('logo_casper.svg'), auto;
 }
 
 
-.description{
-    font-size: 12px;
-    line-height: 15px;
+#div4 { 
+    width: 20%; 
+    height: 23%; 
+    float: left; 
+    overflow:scroll;
+}
+
+
+#div5 { 
+    width: 20%; 
+    height: 23%; 
+    float: left; 
+    overflow:scroll;
+    color:white;
+}
+
+#div5 .featured_image:hover{
+      cursor: url('logo_koala.svg'), auto;
+}
+
+#div6 { 
+    width: 20%; 
+    height: 23%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div7 { 
+    width: 20%; 
+    height: 23%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div7 .featured_image:hover{
+      cursor: url('logo_ba.svg'), auto;
+}
+
+#div8 { 
+    width: 20%; 
+    height: 23%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div9 { 
+    width: 20%; 
+    height: 23%; 
+    float: left; 
+    overflow:scroll;
+}
+#div9 .featured_image:hover{
+      cursor: url('logo_nyr.svg'), auto;
+}
+
+#div10 { 
+    width: 20%; 
+    height: 23%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div11 { 
+    width: 20%; 
+    height: 23%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div11 .featured_image:hover{
+      cursor: url('logo_ad.svg'), auto;
+}
+
+#div12 { 
+    width: 20%; 
+    height: 23%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div13 { 
+    width: 20%; 
+    height: 23%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div13 .featured_image:hover{
+      cursor: url('logo_vog.svg'), auto;
+}
+
+#div14 { 
+    width: 20%; 
+    height: 23%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div15 { 
+    width: 20%; 
+    height: 23%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div15 .featured_image:hover{
+      cursor: url('logo_wir.svg'), auto;
+}
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 799px) and (min-width: 100px){
+
+.header {
+    position: fixed;
+    font-size: 4vw;
+    width: 100%;
+    letter-spacing: -.1;
+    line-height: 4.2vw;
+    top:-1.8vw;
+}
+
+
+.name{
+  float:left;
+  display:inline; 
+  width:50%;
+}
+
+.info{
+  float:right;
+  display:inline; 
+  width:50%;
+  text-align: right;
+}
+
+.info p{
+    padding-right: 2vw;
+}
+.name p{
+    padding-left: 2vw;
+}
+
+a {
+  color:#000;
+  text-decoration: none;
+    position: relative;
+
+}
+
+a:after{    
+    transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+transform-origin: 100% 50%;}
+
+
+a:visited {
+    color: #000;
+}
+
+
+a:hover:after{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 0;    
+    left:0;
+    bottom: 1px;                   
+    border-bottom: 1.5px solid #000;  
+
+  transform: scaleX(1); 
+  transform-origin:   0% 50%; 
+}
+
+
+
+
+#checker{
+    margin-top: 31vh;
+}
+
+
+
+.descriptiontext{
+    font-size: 4.4vh; 
     font-style: normal; 
     font-variant: normal; 
     font-weight:300; 
-    padding-right:4vw;
-    padding-top: 6px;
-    text-transform: ;
+    line-height: 4.8vh;
+    padding-left:4.2vh;
+    padding-right:4.2vw;
+    display:none;
 }
 
-.description span{
-    display: none;
+
+.featured_image {
+  background-color: #f5f5f5;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-p span{
-        font-size: 24px; 
+
+
+
+img{
+overflow-clip-margin: content-box;
+    overflow: clip;
 }
+
+video{
+overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.featured_image img, .featured_image video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+
+}
+
+
+.text{
+    color: #fff;
+    opacity:0;
+    position: relative;
+    text-align: center;
+    bottom: 48;
+}
+
+
+.featured_image:hover {
+     -webkit-filter: brightness(2%);
+    transition: all 0.3s ease;
+
+}
+
+
+
+#div1 {
+    width: 50%; 
+    height: 20%; 
+    float: left;
+}
+
+#div1 .featured_image:hover{
+      cursor: url('logo_op.svg'), auto;
+
+}
+
+#div2 { 
+    width: 50%; 
+    height: 20%; 
+    float: left;
+    overflow:scroll;
+}
+
+
+#div3 { 
+    width: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+    padding-left: 50%;
+}
+
+#div3 .featured_image:hover{
+      cursor: url('logo_casper.svg'), auto;
+}
+
+
+#div4 { 
+    width: 0%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+
+#div5 { 
+    width: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+    color:white;
+}
+
+#div5 .featured_image:hover{
+      cursor: url('logo_koala.svg'), auto;
+}
+
+#div6 { 
+    width: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div7 { 
+    width: 50%; 
+    padding-left: 50%;
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+
+}
+
+#div7 .featured_image:hover{
+      cursor: url('logo_ba.svg'), auto;
+}
+
+#div8 { 
+    width: 0%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div9 { 
+    width: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+#div9 .featured_image:hover{
+      cursor: url('logo_nyr.svg'), auto;
+}
+
+#div10 { 
+    width: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div11 { 
+    width: 50%;
+    padding-left: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div11 .featured_image:hover{
+      cursor: url('logo_ad.svg'), auto;
+}
+
+#div12 { 
+    width: 0%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div13 { 
+    width: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div13 .featured_image:hover{
+      cursor: url('logo_vog.svg'), auto;
+}
+
+#div14 { 
+    width: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div15 { 
+    width: 50%; 
+    padding-left: 50%; 
+    height: 20%; 
+    float: left; 
+    overflow:scroll;
+}
+
+#div15 .featured_image:hover{
+      cursor: url('logo_wir.svg'), auto;
+}
+
 
 
 }
