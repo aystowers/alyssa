@@ -20,17 +20,6 @@ html, body{
 
 
 
-
-
-
-/* Link Behavior Link Behavior Link Behavior Link Behavior Link Behavior Link Behavior Link Behavior Link Behavior */
-
-
-
-
-
-
-
 /* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
 
 
@@ -173,9 +162,6 @@ a:hover:after{
     color: #696969;
 }
 
-.description span{
-    display: none;
-}
 
 
 }
@@ -325,13 +311,7 @@ a:hover:after{
     color: #696969;
 }
 
-.description span{
-    display: none;
-}
 
-p span{
-        font-size: 24px; 
-}
 
 }
 
@@ -493,12 +473,7 @@ a:hover:after{
     color: #696969;
 }
 
-.description span{
-    display: none;
-}
 
-p span{
-        font-size: 24px; 
 }
 
 }
