@@ -37,6 +37,10 @@ html, body{
     color: white;
 }
 
+.name_mobile{
+    display: none;
+}
+
 
 .name{
   float:left;
@@ -296,6 +300,9 @@ overflow-clip-margin: content-box;
     color: white;
 }
 
+.name_mobile{
+    display: none;
+}
 
 
 .name{
@@ -536,10 +543,10 @@ overflow-clip-margin: content-box;
 
 .header {
     position: fixed;
-    font-size: 21px;
+    font-size:28px;
     width: 100%;
     letter-spacing: -.1;
-    line-height: 23px;
+    line-height: 32px;
     top:-12px;
     z-index: 1;
 
@@ -548,25 +555,37 @@ overflow-clip-margin: content-box;
 }
 
 
+.name_mobile{
+    position: absolute;
+    font-size:38px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+    padding-top:5vh;
+
+}
+
+
 .name{
-  float:left;
-  display:inline; 
-  width:50%;
+    display: none;
 }
 
 .info{
-  float:right;
+
   display:inline; 
-  width:50%;
-  text-align: right;
+  width: 100%;
+  text-align: center;
 }
 
 .info p{
     padding-right: 20px;
-}
-.name p{
     padding-left: 20px;
 }
+.name_mobile p{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
 
 a {
   color:inherit;
@@ -601,9 +620,8 @@ a:visited {
 
 
 
-
 #checker{
-    margin-top: 31vh;
+    margin-top: 34vh;
 }
 
 

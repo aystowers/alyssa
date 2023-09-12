@@ -26,10 +26,7 @@ background-color: #fff;
 
 
 
-/* TOP ANIMATION TOP ANIMATION TOP ANIMATION TOP ANIMATION TOP ANIMATION TOP ANIMATION TOP ANIMATION */
-
-
-
+/* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
 
 
 
@@ -312,13 +309,11 @@ overflow-clip-margin: content-box;
 }
 
 
-
 }
 
 
 
-
-
+/* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
 
 
 @media screen and (max-width: 899px) and (min-width: 600px){
@@ -605,8 +600,11 @@ overflow-clip-margin: content-box;
 }
 
 
-
 }
+
+
+
+/* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
 
 
 @media screen and (max-width: 599px) and (min-width: 20px){
@@ -691,7 +689,7 @@ a:hover:after{
 
 
 #checker{
-    margin-top: 31vh;
+    margin-top: 34vh;
 }
 
 
