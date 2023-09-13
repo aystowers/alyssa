@@ -446,7 +446,7 @@ a:visited {
     line-height: 40px;
     width: 100%;
     text-align: center;
-    padding-top:5vh;
+    padding-top:48px;
 }
 
 .name{
@@ -474,7 +474,7 @@ a:visited {
 /* CONTENTS BODY COPY AREA */
 
 #checker{
-    margin-top: 40vh;
+    margin-top: 286px;
 }
 
 .descriptiontext{

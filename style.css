@@ -570,7 +570,7 @@ a:hover:after{
     line-height: 40px;
     width: 100%;
     text-align: center;
-    padding-top:5vh;
+    padding-top:48px;
 }
 
 .name_mobile p{
@@ -598,7 +598,7 @@ a:hover:after{
 /* IMAGE GRID */
 
 #checker{
-    margin-top: 40vh;
+    margin-top: 286px;
 }
 
 .featured_image img, .featured_image video {
