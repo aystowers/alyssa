@@ -146,10 +146,11 @@ a:hover:after{
 }
 
 #div2 {
-    width: 50%; 
-    aspect-ratio : 16 / 9;
+    width: 50%;
+    aspect-ratio : 9 / 16;
     float: left;
 }
+
 
 #div3 {
     width: 20%; 
