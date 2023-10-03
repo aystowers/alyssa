@@ -132,9 +132,16 @@ a:hover:after{
 
 
 
+#cookie {
+    width: 18%; 
+    aspect-ratio : 18 / 20;
+    float: left;
+    background-color: blue;
+}
+
 #div1 {
     width: 20%; 
- aspect-ratio : 1 / 1;
+    aspect-ratio : 1 / 1;
     float: left;
 }
 
@@ -295,7 +302,7 @@ a:hover:after{
 
 #padding { 
     width: 11%;
-    height:300px;
+    height:26vw;
     float: left; 
 
 }
@@ -304,9 +311,8 @@ a:hover:after{
 
 #padding2 { 
     width: 8%;
-    height:400px;
+    height:30vw;
     float: left; 
-
 
 }
 
@@ -314,12 +320,17 @@ a:hover:after{
 
 #padding_narrow { 
     width: 6.6666%;
-    height:300px;
+    height:20vw;
     float: left; 
 
 }
 
+#padding2 { 
+    width: 2%;
+    height:20vw;
+    float: left;
 
+}
 
 .text{
     display: none;
