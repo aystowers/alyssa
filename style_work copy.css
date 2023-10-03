@@ -136,7 +136,7 @@ a:hover:after{
     width: 18%; 
     aspect-ratio : 18 / 20;
     float: left;
-    background-color: blue;
+    background-color: #DADADA;
 }
 
 #div1 {
@@ -320,7 +320,7 @@ a:hover:after{
 
 
 #padding_narrow { 
-    width: 6.6666%;
+    width: 6.666666666666%;
     height:20vw;
     float: left; 
 
