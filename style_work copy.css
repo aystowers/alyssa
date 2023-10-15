@@ -20,6 +20,11 @@ html, body{
 
 
 
+/* Article styles, just for the demo, don't have anything to do with the transition */
+
+
+
+
 /* BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1 BREAKPONT 1   */
 
 
@@ -106,21 +111,6 @@ a:hover:after{
   width: 60%;
 }
 
-#padding_horizontal{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height:100px;
-}
-
-#space_between_projects{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height:150px;
-}
 
 #header{
     display: inline-block;
@@ -318,7 +308,6 @@ a:hover:after{
 }
 
 
-
 #padding_narrow { 
     width: 6.666666666666%;
     height:20vw;
@@ -331,6 +320,23 @@ a:hover:after{
     height:20vw;
     float: left;
 
+}
+
+
+#padding_horizontal{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height:100px;
+}
+
+#space_between_projects{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height:150px;
 }
 
 .text{
@@ -600,7 +606,7 @@ a:hover:after{
 }
 
 #checker{
-    margin-top: 8vh;
+    margin-top: 50px;
 }
 
 .text{
@@ -612,6 +618,7 @@ a:hover:after{
     text-align: center;
     font-size:38px;
     line-height: 40px;
+    padding-top: 50px;
 }
 
 #div1{
